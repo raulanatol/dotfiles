@@ -93,6 +93,7 @@ brew "wix/brew/applesimutils"
 cask "adoptopenjdk8"
 cask "font-hack-nerd-font"
 cask "responsively"
+cask "hammerspoon"
 mas "Agenda", id: 1287445660
 mas "Battery Indicator", id: 1206020918
 mas "Color Picker", id: 641027709
