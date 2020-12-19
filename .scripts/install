@@ -1,0 +1,34 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+if [ ! -d "$HOME/.zim" ]; then
+  if [ -z "$ZIM_HOME" ]; then
+    info " 🍉 Installing zim"
+    curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
+  fi
+fi
+
+if [ ! -d "$HOME/.utilsh" ]; then
+  if [ -z "$UTILSH_PATH" ]; then
+    info " 🧢 Installing utilsh"
+    git clone --depth 1 git@github.com:raulanatol/utilsh.git "$HOME/.utilsh"
+    "$HOME/.utilsh/bin/installer" "$HOME/.utilsh"
+  fi
+fi
+
+DOTFILES_PATH=$HOME/.dotfiles
+
+source "$DOTFILES_PATH/shell/sout"
+source "$DOTFILES_PATH/shell/os"
+source "$DOTFILES_PATH/.scripts/utils"
+
+if os::is_macos; then
+  sout::info "Installing MacOS 🍎 custom packages"
+  utils::install_macos
+fi
+
+info " 👾 ZSH as the default shell"
+chsh -s "$(command -v zsh)"
+
+info " 👌 Done"

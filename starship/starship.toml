@@ -1,0 +1,65 @@
+add_newline = false
+prompt_order = [
+    "hostname",
+    "python",
+    "rust",
+    "directory",
+    "git_branch",
+    "git_status",
+    #    "line_break",
+    #    "package",
+    "line_break",
+    "character"
+]
+
+[character]
+symbol = "➜"
+error_symbol = "✖"
+use_symbol_for_status = true
+
+[package]
+prefix = ""
+
+[aws]
+disabled = true
+
+[git_branch]
+symbol = "🐙 "
+
+[git_status]
+conflicted = "🏳"
+ahead = "🏎💨"
+behind = "😰"
+diverged = "😵"
+untracked = "🤷‍"
+stashed = "📦"
+modified = "📝"
+staged.value = "++"
+staged.style = "green"
+staged_count.enabled = true
+staged_count.style = "green"
+renamed = ""
+deleted = "🗑"
+prefix = ""
+suffix = ""
+
+[directory]
+truncation_length = 8
+truncate_to_repo = false
+use_logical_path = true
+
+[hostname]
+ssh_only = false
+style = "yellow"
+suffix = ""
+#
+#[nodejs]
+#disabled = true
+#
+[python]
+symbol = "🐍 "
+
+[username]
+style_root = "bold green"
+show_always = true
+#prefix = "as

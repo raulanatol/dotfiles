@@ -1,0 +1,11 @@
+$DOTFILES_PATH/procs/.procs.toml                $HOME/.procs.toml
+$DOTFILES_PATH/vim/.vimrc                       $HOME/.vimrc
+$DOTFILES_PATH/git/.gitconfig                   $HOME/.gitconfig
+$DOTFILES_PATH/git/.gitignore                   $HOME/.gitignore
+$DOTFILES_PATH/git/.gitattributes               $HOME/.gitattributes
+$DOTFILES_PATH/starship/starship.toml           $HOME/.config/starship.toml
+$DOTFILES_PATH/hammerspoon/init.lua             $HOME/.hammerspoon/init.lua
+$DOTFILES_PATH/zsh/.zshrc                       $HOME/.zshrc
+$DOTFILES_PATH/zsh/.zshenv                      $HOME/.zshenv
+$DOTFILES_PATH/zim/.zlogin                      $HOME/.zlogin
+$DOTFILES_PATH/zim/.zimrc                       $HOME/.zimrc

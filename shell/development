@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+
+set -eo pipefail
+
+source "$UTILSH_PATH/src/shell/sout"
+source "$UTILSH_PATH/src/shell/string"
+
+#
+# increase_semversion: Generate the next version based on [Semantic Versioning](https://semver.org/) (major|minor|patch)
+# param:
+#   <current version>
+#   <increase word> major|minor|patch
+development::increase_semversion() {
+  VERSION=$1
+  INCREASE=$(string::to_uppercase "$2")
+
+  IFS=. read -r major minor patch <<<"$VERSION"
+
+  case "$INCREASE" in
+  "PATCH")
+    ((patch++))
+    ;;
+  "MINOR")
+    patch=0
+    ((minor++))
+    ;;
+  "MAJOR")
+    minor=0
+    patch=0
+    ((major++))
+    ;;
+  *)
+    sout::error "Invalid INCREASE word use: 'major' | 'minor' | 'patch'"
+    exit 1
+    ;;
+  esac
+
+  echo "$major"."$minor"."$patch"
+}

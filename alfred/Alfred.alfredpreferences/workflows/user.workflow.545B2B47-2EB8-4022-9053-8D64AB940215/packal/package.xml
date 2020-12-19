@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<workflow>
+  <name>Irvue for Alfred</name>
+  <version>1.0.3</version>
+  <bundle>com.marceloalves.irvue-workflow</bundle>
+  <updated>1487613022</updated>
+  <file>irvue.alfredworkflow</file>
+</workflow>

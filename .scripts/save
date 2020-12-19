@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+brew services stop --all
+brew bundle dump --file="${HOMEBREW_BUNDLE_FILE_PATH}" --force
+echo 'Brew apps exported!'
+
+pip freeze >"$DOTFILES_PATH/langs/python/requirements.txt"
+echo 'Python apps exported!'
+
+log::note "Sync private files to private folder"
+
+mkdir -p "$PRIVATE_FOLDER/shell/_exports"
+mkdir -p "$PRIVATE_FOLDER/shell/_aliases"
+
+cp "$DOTFILES_PATH/zsh/exports/private-exports.sh" "$PRIVATE_FOLDER/zsh/exports/private-exports.sh"
+cp "$DOTFILES_PATH/zsh/aliases/private-aliases.sh" "$PRIVATE_FOLDER/zsh/aliases/private-aliases.sh"

@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+source "$DOTFILES_PATH/shell/sout"
+source "$DOTFILES_PATH/shell/os"
+
+sout::info " ♻️️  Updating dotfiles"
+cd "$DOTFILES_PATH" || exit
+git checkout main
+git pull
+
+symlinks::create() {
+  sout::info " Applying symlinks"
+  local -r SYMLINKS_FILE="$DOTFILES_PATH"/symlinks
+
+  while IFS= read -r line; do
+    eval "ln -sf $(echo "$line" | awk -F "::>::" '{print $1 " " $2}')"
+  done <<<$(cat "$SYMLINKS_FILE")
+}
+
+symlinks::create
+
+source "$HOME"/.zshrc

@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+
+utils::install_macos() {
+  # Install brew if not installed
+  if ! [ -x "$(command -v brew)" ]; then
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  fi
+
+  # All apps (This line is 2 times because there are dependencies between brew cask and brew)
+  brew bundle --file="$DOTFILES_PATH/brew/Brewfile" || true
+  brew bundle --file="$DOTFILES_PATH/brew/Brewfile"
+
+  # Correct paths (so, we handle all with $PATH)
+  sudo truncate -s 0 /etc/paths
+
+  # Custom macOS "defaults"
+  sh "$DOTFILES_PATH/mac/install.sh"
+
+  utils::create_mac_symlinks
+
+  # Copy private files
+  echo TODO COPY PRIVATE FILES!!
+
+  # Install vim
+  sout::info " 👵🖥️  installing vim"
+  git clone https://github.com/VundleVim/Vundle.vim.git "$HOME"/.vim/bundle/Vundle.vim
+  vim +PluginInstall +qall
+}
+
+utils::create_mac_symlinks() {
+  mkdir -p $HOME/.config
+  sout::info " 🍎 Applying mac symlinks"
+  while IFS= read -r line; do
+    eval "ln -sf $line"
+  done <"$DOTFILES_PATH"/symlinks
+}
