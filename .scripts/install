@@ -3,13 +3,14 @@
 set -euo pipefail
 
 DOTFILES_PATH=$HOME/.dotfiles
+ZIM_HOME="$DOTFILES_PATH/modules/zimfw"
 
 source "$DOTFILES_PATH/shell/sout"
 source "$DOTFILES_PATH/shell/os"
 source "$DOTFILES_PATH/.scripts/utils"
 
 echo " 🍉 Installing zim"
-zsh "$DOTFILES_PATH/modules/zimfw/zimfw.zsh" install
+zsh "$ZIM_HOME/zimfw.zsh" install
 
 if [ ! -d "$HOME/.utilsh" ]; then
   if [ -z "$UTILSH_PATH" ]; then

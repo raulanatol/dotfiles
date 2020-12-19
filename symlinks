@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+DOTFILES_PATH=$HOME/.dotfiles
+
 echo " Applying symlinks"
 ln -sf "$DOTFILES_PATH"/procs/.procs.toml "$HOME"/.procs.toml
 ln -sf "$DOTFILES_PATH"/vim/.vimrc "$HOME"/.vimrc
