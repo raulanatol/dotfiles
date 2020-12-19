@@ -9,7 +9,7 @@ source "$DOTFILES_PATH/shell/os"
 source "$DOTFILES_PATH/.scripts/utils"
 
 echo " 🍉 Installing zim"
-source "$DOTFILES_PATH/modules/zimfw/zimfw.zsh" install
+zsh "$DOTFILES_PATH/modules/zimfw/zimfw.zsh" install
 
 if [ ! -d "$HOME/.utilsh" ]; then
   if [ -z "$UTILSH_PATH" ]; then

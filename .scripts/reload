@@ -2,13 +2,26 @@
 
 source "$DOTFILES_PATH/shell/sout"
 source "$DOTFILES_PATH/shell/os"
+source "$DOTFILES_PATH/.scripts/utils"
 
 sout::info " ♻️️  Updating dotfiles"
 cd "$DOTFILES_PATH" || exit
-#git checkout main
-#git pull
+git checkout main
+git pull
 
-mkdir -p "$HOME/.config"
-source "$DOTFILES_PATH/symlinks"
+if os::is_macos; then
+  sout::info "Installing MacOS 🍎 custom packages"
+  utils::install_macos
+fi
+
+echo '🍻 Updating Brew Cask apps'
+OUTDATED_CASKS=$(brew cask outdated)
+
+if [ -n "$OUTDATED_CASKS" ]; then
+  echo "$OUTDATED_CASKS" | grep -v real-vnc | xargs -n1 brew cask install --force
+  echo '✅ Casks updated'
+else
+  echo '✅ Casks already up-to-date'
+fi
 
 source "$HOME"/.zshrc
