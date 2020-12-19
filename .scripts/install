@@ -2,12 +2,8 @@
 
 set -euo pipefail
 
-if [ ! -d "$HOME/.zim" ]; then
-  if [ -z "$ZIM_HOME" ]; then
-    info " 🍉 Installing zim"
-    curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
-  fi
-fi
+info " 🍉 Installing zim"
+source "$DOTFILES_PATH/modules/zimfw/zimfw.zsh" install
 
 if [ ! -d "$HOME/.utilsh" ]; then
   if [ -z "$UTILSH_PATH" ]; then

@@ -30,7 +30,5 @@ utils::install_macos() {
 utils::create_mac_symlinks() {
   mkdir -p $HOME/.config
   sout::info " 🍎 Applying mac symlinks"
-  while IFS= read -r line; do
-    eval "ln -sf $line"
-  done <"$DOTFILES_PATH"/symlinks
+  source "$DOTFILES_PATH/symlinks"
 }

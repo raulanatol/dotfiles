@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -euo pipefail
+set -uo pipefail
 
 brew services stop --all
 brew bundle dump --file="${HOMEBREW_BUNDLE_FILE_PATH}" --force
@@ -9,10 +9,18 @@ echo 'Brew apps exported!'
 pip freeze >"$DOTFILES_PATH/langs/python/requirements.txt"
 echo 'Python apps exported!'
 
-log::note "Sync private files to private folder"
+if [ -d "$PRIVATE_FOLDER" ]; then
+  echo "Sync private files to private folder"
+  mkdir -p "$PRIVATE_FOLDER/zsh/exports"
+  mkdir -p "$PRIVATE_FOLDER/zsh/aliases"
+  cp "$DOTFILES_PATH/zsh/exports/private-exports.sh" "$PRIVATE_FOLDER/zsh/exports/private-exports.sh"
+  cp "$DOTFILES_PATH/zsh/aliases/private-aliases.sh" "$PRIVATE_FOLDER/zsh/aliases/private-aliases.sh"
+fi
 
-mkdir -p "$PRIVATE_FOLDER/shell/_exports"
-mkdir -p "$PRIVATE_FOLDER/shell/_aliases"
+#cd "$DOTFILES_PATH"
+#git pull
+#git add .
+#git commit -m "Sync $(date +"%d_%m_%Y")"
+#git push -u origin main
 
-cp "$DOTFILES_PATH/zsh/exports/private-exports.sh" "$PRIVATE_FOLDER/zsh/exports/private-exports.sh"
-cp "$DOTFILES_PATH/zsh/aliases/private-aliases.sh" "$PRIVATE_FOLDER/zsh/aliases/private-aliases.sh"
+echo " 👌 Done"

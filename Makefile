@@ -5,7 +5,6 @@ install:
 	@.scripts/install
 
 reload:
-	@echo "♻️ Reload the dotfiles"
 	@.scripts/reload
 
 save:
