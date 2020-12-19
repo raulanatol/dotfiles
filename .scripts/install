@@ -9,6 +9,10 @@ source "$DOTFILES_PATH/shell/sout"
 source "$DOTFILES_PATH/shell/os"
 source "$DOTFILES_PATH/.scripts/utils"
 
+echo "Update submodules"
+git submodules init
+git submodules update
+
 echo " 🍉 Installing zim"
 zsh "$ZIM_HOME/zimfw.zsh" install
 

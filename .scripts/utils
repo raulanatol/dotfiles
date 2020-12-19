@@ -17,13 +17,13 @@ utils::install_macos() {
   sh "$DOTFILES_PATH/mac/install.sh"
 
   utils::create_mac_symlinks
-
-  # Copy private files
-  echo TODO COPY PRIVATE FILES!!
+  utils::sync_private_folder
 
   # Install vim
   sout::info " 👵🖥️  installing vim"
-  git clone https://github.com/VundleVim/Vundle.vim.git "$HOME"/.vim/bundle/Vundle.vim
+  if [ ! -f "$HOME"/.vim/bundle/Vundle.vim ]; then
+    git clone https://github.com/VundleVim/Vundle.vim.git "$HOME"/.vim/bundle/Vundle.vim
+  fi
   vim +PluginInstall +qall
 }
 
@@ -31,4 +31,14 @@ utils::create_mac_symlinks() {
   mkdir -p $HOME/.config
   sout::info " 🍎 Applying mac symlinks"
   source "$DOTFILES_PATH/symlinks"
+}
+
+utils::sync_private_folder() {
+  if [ -d "$PRIVATE_FOLDER" ]; then
+    echo "Sync private files to private folder"
+    mkdir -p "$PRIVATE_FOLDER/zsh/exports"
+    mkdir -p "$PRIVATE_FOLDER/zsh/aliases"
+    cp "$DOTFILES_PATH/zsh/exports/private-exports.sh" "$PRIVATE_FOLDER/zsh/exports/private-exports.sh"
+    cp "$DOTFILES_PATH/zsh/aliases/private-aliases.sh" "$PRIVATE_FOLDER/zsh/aliases/private-aliases.sh"
+  fi
 }
