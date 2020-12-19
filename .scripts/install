@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -euo pipefail
+set -eo pipefail
 
 DOTFILES_PATH=$HOME/.dotfiles
 ZIM_HOME="$DOTFILES_PATH/modules/zimfw"
@@ -10,8 +10,8 @@ source "$DOTFILES_PATH/shell/os"
 source "$DOTFILES_PATH/.scripts/utils"
 
 echo "Update submodules"
-git submodules init
-git submodules update
+git submodule init
+git submodule update
 
 echo " 🍉 Installing zim"
 zsh "$ZIM_HOME/zimfw.zsh" install

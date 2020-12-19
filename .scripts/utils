@@ -34,11 +34,9 @@ utils::create_mac_symlinks() {
 }
 
 utils::sync_private_folder() {
-  if [ -d "$PRIVATE_FOLDER" ]; then
+  if [ -n "$PRIVATE_FOLDER" ]; then
     echo "Sync private files to private folder"
-    mkdir -p "$PRIVATE_FOLDER/zsh/exports"
-    mkdir -p "$PRIVATE_FOLDER/zsh/aliases"
-    cp "$DOTFILES_PATH/zsh/exports/private-exports.sh" "$PRIVATE_FOLDER/zsh/exports/private-exports.sh"
-    cp "$DOTFILES_PATH/zsh/aliases/private-aliases.sh" "$PRIVATE_FOLDER/zsh/aliases/private-aliases.sh"
+    cp "$PRIVATE_FOLDER/zsh/exports/private-exports.sh" "$DOTFILES_PATH/zsh/exports/private-exports.sh"
+    cp "$PRIVATE_FOLDER/zsh/aliases/private-aliases.sh" "$DOTFILES_PATH/zsh/aliases/private-aliases.sh"
   fi
 }
