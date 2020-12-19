@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-DOTFILES_PATH=$HOME/.dotfiles
+mkdir -p $HOME/.config
+mkdir -p $HOME/.hammerspoon
 
 echo " Applying symlinks"
 ln -sf "$DOTFILES_PATH"/procs/.procs.toml "$HOME"/.procs.toml
