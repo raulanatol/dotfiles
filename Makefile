@@ -15,5 +15,5 @@ check:
 	@echo "✅"
 
 docs:
-	@doctoc .
+	@doctoc README.md
 	@echo "📚 Documentation ready!"
