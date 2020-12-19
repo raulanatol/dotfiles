@@ -4,11 +4,11 @@ source "$DOTFILES_PATH/shell/sout"
 source "$DOTFILES_PATH/shell/os"
 
 sout::info " ♻️️  Updating dotfiles"
-#cd "$DOTFILES_PATH" || exit
+cd "$DOTFILES_PATH" || exit
 #git checkout main
 #git pull
 
 mkdir -p "$HOME/.config"
 source "$DOTFILES_PATH/symlinks"
 
-#source "$HOME"/.zshrc
+source "$HOME"/.zshrc

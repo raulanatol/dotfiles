@@ -2,29 +2,29 @@
 
 set -euo pipefail
 
-info " 🍉 Installing zim"
-source "$DOTFILES_PATH/modules/zimfw/zimfw.zsh" install
-
-if [ ! -d "$HOME/.utilsh" ]; then
-  if [ -z "$UTILSH_PATH" ]; then
-    info " 🧢 Installing utilsh"
-    git clone --depth 1 git@github.com:raulanatol/utilsh.git "$HOME/.utilsh"
-    "$HOME/.utilsh/bin/installer" "$HOME/.utilsh"
-  fi
-fi
-
 DOTFILES_PATH=$HOME/.dotfiles
 
 source "$DOTFILES_PATH/shell/sout"
 source "$DOTFILES_PATH/shell/os"
 source "$DOTFILES_PATH/.scripts/utils"
 
+echo " 🍉 Installing zim"
+source "$DOTFILES_PATH/modules/zimfw/zimfw.zsh" install
+
+if [ ! -d "$HOME/.utilsh" ]; then
+  if [ -z "$UTILSH_PATH" ]; then
+    echo " 🧢 Installing utilsh"
+    git clone --depth 1 git@github.com:raulanatol/utilsh.git "$HOME/.utilsh"
+    "$HOME/.utilsh/bin/installer" "$HOME/.utilsh"
+  fi
+fi
+
 if os::is_macos; then
   sout::info "Installing MacOS 🍎 custom packages"
   utils::install_macos
 fi
 
-info " 👾 ZSH as the default shell"
+sout::info " 👾 ZSH as the default shell"
 chsh -s "$(command -v zsh)"
 
-info " 👌 Done"
+sout::info " 👌 Done"
