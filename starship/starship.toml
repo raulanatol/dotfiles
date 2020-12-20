@@ -1,16 +1,14 @@
 add_newline = false
-prompt_order = [
-    "hostname",
-    "python",
-    "rust",
-    "directory",
-    "git_branch",
-    "git_status",
-    #    "line_break",
-    #    "package",
-    "line_break",
-    "character"
-]
+format = """\
+    $hostname\
+    $python\
+    $rust\
+    $directory\
+    $git_branch\
+    $git_status\
+    $line_break\
+    $character\
+    """
 
 [character]
 symbol = "➜"
@@ -34,14 +32,10 @@ diverged = "😵"
 untracked = "🤷‍"
 stashed = "📦"
 modified = "📝"
-staged.value = "++"
-staged.style = "green"
-staged_count.enabled = true
-staged_count.style = "green"
+staged = ' [++$count](green)'
 renamed = ""
 deleted = "🗑"
-prefix = ""
-suffix = ""
+format = '$all_status$ahead_behind $style'
 
 [directory]
 truncation_length = 8
@@ -51,11 +45,7 @@ use_logical_path = true
 [hostname]
 ssh_only = false
 style = "yellow"
-suffix = ""
-#
-#[nodejs]
-#disabled = true
-#
+
 [python]
 symbol = "🐍 "
 
