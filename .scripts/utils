@@ -21,7 +21,8 @@ utils::install_macos() {
 
   # Install vim
   sout::info " 👵🖥️  installing vim"
-  if [ ! -f "$HOME"/.vim/bundle/Vundle.vim ]; then
+
+  if [ ! -d "$HOME"/.vim/bundle/Vundle.vim ]; then
     git clone https://github.com/VundleVim/Vundle.vim.git "$HOME"/.vim/bundle/Vundle.vim
   fi
   cp -r "$DOTFILES_PATH"/vim/colors/* "$HOME"/.vim/bundle/colors
