@@ -23,25 +23,7 @@ source $DOTFILES_PATH/zsh/bindings/reverse_search.zsh
 ## Starship
 eval "$(starship init zsh)"
 
-
-
-
-# TODO move to lazy load
-export PATH="$HOME/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
-# >>> conda initialize >>>
-# !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('$HOME/opt/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__conda_setup"
-else
-    if [ -f "$HOME/opt/anaconda3/etc/profile.d/conda.sh" ]; then
-        . "$HOME/opt/anaconda3/etc/profile.d/conda.sh"
-    else
-        export PATH="$HOME/opt/anaconda3/bin:$PATH"
-    fi
-fi
-unset __conda_setup
-# <<< conda initialize <<<
+## Init extra scripts
+source $DOTFILES_PATH/langs/python/pyenv/init.sh
+source $DOTFILES_PATH/langs/python/conda/init.sh
 

@@ -3,6 +3,7 @@ RUST_PATH="$HOME/.cargo"
 JAVA_PATH="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home"
 ANDROID_HOME="$HOME/Library/Android/sdk"
 SONAR_SCANNER="$HOME/utils/sonar-scanner"
+PYENV_PATH="$HOME/.pyenv"
 
 MISC_SCRIPTS="$HOME/utils/misc"
 
@@ -27,6 +28,7 @@ paths=(
   "$ANDROID_HOME/tools"
   "$ANDROID_HOME/tools/bin"
   "$ANDROID_HOME/platform-tools"
+  "$PYENV_PATH/bin"
   "/bin"
   "/usr/local/bin"
   "/usr/local/opt/gnu-sed/libexec/gnubin"
