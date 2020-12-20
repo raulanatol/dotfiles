@@ -4,7 +4,7 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-  - [install](#install)
+  - [Install](#install)
   - [How to update the dotfiles project](#how-to-update-the-dotfiles-project)
   - [How to add more symlinks?](#how-to-add-more-symlinks)
   - [How to add a new application?](#how-to-add-a-new-application)
@@ -15,7 +15,7 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-## install
+## Install
 
 Run this:
 
