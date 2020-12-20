@@ -37,3 +37,14 @@ Edit the file `symlinks` and add a new line.
 ## How to add a new application?
 
 Create a new folder with the name of the application and put inside all the files that this application needed.
+
+
+
+# Extra installation guide
+
+## Configure iTerm
+
+Preferences > General > Preferences >
+
+✅ Load preferences from a custom folder or URL  (~/.dotfiles/iTerm)
+✅ Save changes to folder when iTerm2 quits

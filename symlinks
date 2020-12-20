@@ -15,3 +15,4 @@ ln -sf "$DOTFILES_PATH"/zsh/.zshrc "$HOME"/.zshrc
 ln -sf "$DOTFILES_PATH"/zsh/.zshenv "$HOME"/.zshenv
 ln -sf "$DOTFILES_PATH"/zim/.zlogin "$HOME"/.zlogin
 ln -sf "$DOTFILES_PATH"/zim/.zimrc "$HOME"/.zimrc
+ln -sf "$DOTFILES_PATH"/langs/ruby/gemrc.symlink "$HOME"/.gemrc
