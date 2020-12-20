@@ -11,9 +11,8 @@ format = """\
     """
 
 [character]
-symbol = "➜"
-error_symbol = "✖"
-use_symbol_for_status = true
+success_symbol = "[➜](bold green)"
+error_symbol = "[✖](bold red)"
 
 [package]
 prefix = ""
