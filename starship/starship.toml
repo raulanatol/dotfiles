@@ -21,6 +21,7 @@ prefix = ""
 disabled = true
 
 [git_branch]
+format = "[$symbol$branch]($style) "
 symbol = "🐙 "
 
 [git_status]
@@ -42,10 +43,12 @@ truncate_to_repo = false
 use_logical_path = true
 
 [hostname]
+format = "[$hostname]($style) "
 ssh_only = false
 style = "yellow"
 
 [python]
+format = '[${symbol}${pyenv_prefix}${version}( \($virtualenv\))]($style) '
 symbol = "🐍 "
 
 [username]
