@@ -37,6 +37,7 @@ brew "dust"
 brew "exa"
 brew "fd"
 brew "fzf"
+brew "geos"
 brew "krb5"
 brew "libxml2"
 brew "libpq"
@@ -68,6 +69,7 @@ brew "ncdu"
 brew "noti"
 brew "postgresql"
 brew "procs"
+brew "pyenv"
 brew "starship"
 brew "thefuck"
 brew "tig"
@@ -93,7 +95,6 @@ brew "wix/brew/applesimutils"
 cask "adoptopenjdk8"
 cask "font-hack-nerd-font"
 cask "responsively"
-cask "hammerspoon"
 mas "Agenda", id: 1287445660
 mas "Battery Indicator", id: 1206020918
 mas "Color Picker", id: 641027709
@@ -103,7 +104,6 @@ mas "Divvy", id: 413857545
 mas "Gapplin", id: 768053424
 mas "GIPHY CAPTURE", id: 668208984
 mas "IP Scanner", id: 404167149
-mas "iPhoto", id: 408981381
 mas "Irvue", id: 1039633667
 mas "Keynote", id: 409183694
 mas "MenubarClock", id: 492167985

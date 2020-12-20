@@ -17,10 +17,10 @@ if [ -d "$PRIVATE_FOLDER" ]; then
   cp "$DOTFILES_PATH/zsh/aliases/private-aliases.sh" "$PRIVATE_FOLDER/zsh/aliases/private-aliases.sh"
 fi
 
-#cd "$DOTFILES_PATH"
-#git pull
-#git add .
-#git commit -m "Sync $(date +"%d_%m_%Y")"
-#git push -u origin main
+cd "$DOTFILES_PATH" || exit
+git pull
+git add .
+git commit -m "Sync $(date +"%d_%m_%Y")"
+git push -u origin main
 
 echo " 👌 Done"
