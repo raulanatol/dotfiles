@@ -43,8 +43,8 @@ defaults write com.apple.screensaver askForPasswordDelay -int 0
 mkdir -p "${HOME}/screenshots"
 defaults write com.apple.screencapture location -string "${HOME}/screenshots"
 
-# Autohide the menu bar
-defaults write NSGlobalDomain _HIHideMenuBar -bool true
+# Autohide the menu bar - false
+defaults write NSGlobalDomain _HIHideMenuBar -bool false
 
 ###############################################################################
 # Finder                                                                      #
@@ -75,7 +75,8 @@ defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 # Enable highlight hover effect for the grid view of a stack (Dock)
 defaults write com.apple.dock mouse-over-hilite-stack -bool true
 
-defaults write com.apple.dock tilesize -int 35
+# Dock icons size
+defaults write com.apple.dock tilesize -int 56
 
 # Change minimize/maximize window effect
 defaults write com.apple.dock mineffect -string "genie"
@@ -126,3 +127,8 @@ defaults write com.apple.ActivityMonitor ShowCategory -int 0
 # Sort Activity Monitor results by CPU usage
 defaults write com.apple.ActivityMonitor SortColumn -string "CPUUsage"
 defaults write com.apple.ActivityMonitor SortDirection -int 0
+
+# Kill affected apps
+for app in "Dock" "Finder"; do
+  killall "${app}" >/dev/null 2>&1
+done

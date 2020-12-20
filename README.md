@@ -4,14 +4,14 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**
 
-  - [Install](#install)
-  - [How to update the dotfiles project](#how-to-update-the-dotfiles-project)
-  - [How to add more symlinks?](#how-to-add-more-symlinks)
-  - [How to add a new application?](#how-to-add-a-new-application)
+- [Install](#install)
+- [How to update the dotfiles project](#how-to-update-the-dotfiles-project)
+- [How to add more symlinks?](#how-to-add-more-symlinks)
+- [How to add a new application?](#how-to-add-a-new-application)
 - [Extra installation guide](#extra-installation-guide)
-  - [Configure iTerm](#configure-iterm)
+    - [Configure iTerm](#configure-iterm)
 - [Misc](#misc)
-  - [Reload completion](#reload-completion)
+    - [Reload completion](#reload-completion)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -60,3 +60,26 @@ Execute the below script, after that open a new terminal.
 ```shell
 .scripts/reload_completion.sh
 ```
+
+## New mac defaults
+
+```shell
+defaults read > before
+```
+
+Change the preference (using the UI)
+
+```shell
+defaults read > after
+```
+
+And check the diff
+
+```shell
+diff before after
+```
+
+More info:
+ - https://pawelgrzybek.com/change-macos-user-preferences-via-command-line/
+ - https://www.shell-tips.com/mac/defaults/
+ - https://macos-defaults.com
