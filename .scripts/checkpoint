@@ -20,7 +20,7 @@ fi
 cd "$DOTFILES_PATH" || exit
 git pull
 git add .
-git commit -m "Sync $(date +"%d_%m_%Y")"
+git commit -m "Checkpoint $(date +"%d_%m_%Y")"
 git push -u origin main
 
 echo " 👌 Done"
