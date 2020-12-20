@@ -2,7 +2,7 @@
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+**Table of Contents**
 
   - [install](#install)
   - [How to update the dotfiles project](#how-to-update-the-dotfiles-project)
@@ -48,8 +48,8 @@ Create a new folder with the name of the application and put inside all the file
 
 Preferences > General > Preferences >
 
-✅ Load preferences from a custom folder or URL  (~/.dotfiles/iTerm)
-✅ Save changes to folder when iTerm2 quits
+- ✅ Load preferences from a custom folder or URL  (~/.dotfiles/iTerm)
+- ✅ Save changes to folder when iTerm2 quits
 
 # Misc
 
