@@ -4,10 +4,14 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [install](#install)
-- [How to update the dotfiles project](#how-to-update-the-dotfiles-project)
-- [How to add more symlinks?](#how-to-add-more-symlinks)
-- [How to add a new application?](#how-to-add-a-new-application)
+  - [install](#install)
+  - [How to update the dotfiles project](#how-to-update-the-dotfiles-project)
+  - [How to add more symlinks?](#how-to-add-more-symlinks)
+  - [How to add a new application?](#how-to-add-a-new-application)
+- [Extra installation guide](#extra-installation-guide)
+  - [Configure iTerm](#configure-iterm)
+- [Misc](#misc)
+  - [Reload completion](#reload-completion)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -27,7 +31,7 @@ Something we need to update the dotfiles project, new brew applications installe
 execute
 
 ```shell
-make save
+make checkpoint
 ```
 
 ## How to add more symlinks?
@@ -38,8 +42,6 @@ Edit the file `symlinks` and add a new line.
 
 Create a new folder with the name of the application and put inside all the files that this application needed.
 
-
-
 # Extra installation guide
 
 ## Configure iTerm
@@ -48,3 +50,13 @@ Preferences > General > Preferences >
 
 ✅ Load preferences from a custom folder or URL  (~/.dotfiles/iTerm)
 ✅ Save changes to folder when iTerm2 quits
+
+# Misc
+
+## Reload completion
+
+Execute the below script, after that open a new terminal.
+
+```shell
+.scripts/reload_completion.sh
+```

@@ -7,9 +7,9 @@ install:
 reload:
 	@.scripts/reload
 
-save:
+checkpoint:
 	@echo "Saving the dotfiles"
-	@.scripts/save
+	@.scripts/checkpoint
 
 check:
 	@echo "✅"
