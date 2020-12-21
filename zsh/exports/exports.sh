@@ -6,6 +6,7 @@ SONAR_SCANNER="$HOME/utils/sonar-scanner"
 PYENV_PATH="$HOME/.pyenv"
 
 MISC_SCRIPTS="$HOME/utils/misc"
+IDEA_SCRIPTS="$HOME/utils/idea_scripts"
 
 export HOMEBREW_AUTO_UPDATE_SECS=86400
 export HOMEBREW_NO_ANALYTICS=true

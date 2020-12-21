@@ -31,6 +31,16 @@ sudo nvram StartupMute=%01
 # Show language menu in the top right corner of the boot screen
 sudo defaults write /Library/Preferences/com.apple.loginwindow showInputMenu -bool true
 
+# Disable “natural” (Lion-style) scrolling
+#defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
+
+# Disable press-and-hold for keys in favor of key repeat
+#defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
+
+# Set a blazingly fast keyboard repeat rate
+defaults write NSGlobalDomain KeyRepeat -int 1
+defaults write NSGlobalDomain InitialKeyRepeat -int 10
+
 ###############################################################################
 # Screen                                                                      #
 ###############################################################################
@@ -49,6 +59,9 @@ defaults write NSGlobalDomain _HIHideMenuBar -bool false
 ###############################################################################
 # Finder                                                                      #
 ###############################################################################
+
+# Show the ~/Library folder.
+chflags nohidden ~/Library
 
 # Finder: show all filename extensions
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
