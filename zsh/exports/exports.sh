@@ -13,7 +13,6 @@ export HOMEBREW_NO_ANALYTICS=true
 export HOMEBREW_BUNDLE_FILE_PATH="${DOTFILES_PATH}/brew/Brewfile"
 
 export EDITOR='vim'
-export CERT_PATH="$HOME/utils/cert_path"
 export WORKON_HOME="$HOME/.virtualenvs"
 
 paths=(
