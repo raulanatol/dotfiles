@@ -2,8 +2,10 @@ PYTHON_PATH='/usr/local/opt/python/'
 RUST_PATH="$HOME/.cargo"
 JAVA_PATH="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home"
 ANDROID_HOME="$HOME/Library/Android/sdk"
+ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"
 SONAR_SCANNER="$HOME/utils/sonar-scanner"
 PYENV_PATH="$HOME/.pyenv"
+DENO_INSTALL="$HOME/.deno"
 
 MISC_SCRIPTS="$HOME/utils/misc"
 IDEA_SCRIPTS="$HOME/utils/idea_scripts"
@@ -20,6 +22,7 @@ paths=(
   "$UTILSH_PATH/bin"
   "$PYTHON_PATH/libexec/bin"
   "$RUST_PATH/bin"
+  "$DENO_INSTALL/bin"
   "$IDEA_SCRIPTS"
   "$MISC_SCRIPTS"
   "$SONAR_SCANNER/bin"
