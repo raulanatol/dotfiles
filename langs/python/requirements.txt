@@ -26,7 +26,7 @@ entrypoints==0.3
 fastapi==0.48.0
 filelock==3.0.12
 flake8==3.7.8
-GDAL==3.2.1
+GDAL==3.2.2
 gitlint==0.12.0
 identify==1.5.10
 idna==2.10
@@ -57,7 +57,7 @@ nbformat==5.0.8
 nest-asyncio==1.4.3
 nodeenv==1.5.0
 notebook==6.1.5
-numpy==1.20.1
+numpy==1.20.2
 opencv-python==4.4.0.46
 packaging==20.8
 pandas==1.1.5
