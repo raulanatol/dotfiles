@@ -7,6 +7,12 @@ lazynvm() {
   fi
 }
 
+lazyfnm() {
+  unset -f fnm
+  export FNM_DIR=~/.fnm
+  eval "$(fnm env)"
+}
+
 nvm() {
   lazynvm
   nvm $@
@@ -25,4 +31,9 @@ npm() {
 npx() {
   lazynvm
   npx $@
+}
+
+fnm() {
+  lazyfnm
+  fnm $@
 }
