@@ -20,6 +20,7 @@ brew "autoenv"
 brew "readline"
 brew "sqlite"
 brew "xz"
+brew "python@3.9"
 brew "autojump"
 brew "automake"
 brew "bandwhich"
@@ -42,6 +43,7 @@ brew "diskonaut"
 brew "dust"
 brew "exa"
 brew "fd"
+brew "fnm"
 brew "fzf"
 brew "geos"
 brew "krb5"
@@ -83,6 +85,7 @@ brew "procs"
 brew "pyenv"
 brew "python@3.8"
 brew "redis"
+brew "shellcheck"
 brew "starship"
 brew "telnet"
 brew "thefuck"
@@ -123,6 +126,7 @@ mas "Gapplin", id: 768053424
 mas "GIPHY CAPTURE", id: 668208984
 mas "GoodNotes", id: 1444383602
 mas "IP Scanner", id: 404167149
+mas "iPhoto", id: 408981381
 mas "Irvue", id: 1039633667
 mas "Jira", id: 1475897096
 mas "Keynote", id: 409183694
@@ -139,6 +143,7 @@ mas "Telegram", id: 747648890
 mas "The Unarchiver", id: 425424353
 mas "Toggl Track", id: 957734279
 mas "Unclutter", id: 577085396
+mas "Vectornator", id: 1219074514
 mas "WiFi Explorer", id: 494803304
 mas "Xcode", id: 497799835
 mas "ZoomMe", id: 1437487517
