@@ -16,13 +16,16 @@ tap "rasukarusan/tap"
 tap "rigellute/tap"
 tap "sambadevi/powerlevel9k"
 tap "wix/brew"
+brew "atuin"
 brew "autoenv"
+brew "openssl@1.1"
 brew "readline"
 brew "sqlite"
 brew "xz"
 brew "python@3.9"
 brew "autojump"
 brew "automake"
+brew "aws-elasticbeanstalk", link: false
 brew "bandwhich"
 brew "bash"
 brew "bat"
@@ -51,7 +54,6 @@ brew "libxml2"
 brew "libdap"
 brew "libpq"
 brew "libspatialite"
-brew "openblas"
 brew "numpy"
 brew "poppler"
 brew "gdal"
@@ -126,6 +128,7 @@ mas "Gapplin", id: 768053424
 mas "GIPHY CAPTURE", id: 668208984
 mas "GoodNotes", id: 1444383602
 mas "IP Scanner", id: 404167149
+mas "iPhoto", id: 408981381
 mas "Irvue", id: 1039633667
 mas "Jira", id: 1475897096
 mas "Keynote", id: 409183694
