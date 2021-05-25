@@ -3,149 +3,70 @@ tap "cjbassi/ytop"
 tap "github/gh"
 tap "heroku/brew"
 tap "homebrew/bundle"
-tap "homebrew/cask"
-tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "homebrew/services"
 tap "jesseduffield/lazydocker"
-tap "koekeishiya/formulae"
-tap "localazy/tools"
-tap "mykolaharmash/git-jump"
-tap "nektos/tap"
-tap "rasukarusan/tap"
-tap "rigellute/tap"
-tap "sambadevi/powerlevel9k"
-tap "wix/brew"
 brew "atuin"
-brew "autoenv"
-brew "openssl@1.1"
-brew "readline"
-brew "sqlite"
+brew "autoconf"
+brew "automake"
+brew "bat"
 brew "xz"
 brew "python@3.9"
-brew "autojump"
-brew "automake"
-brew "aws-elasticbeanstalk", link: false
-brew "bandwhich"
-brew "bash"
-brew "bat"
-brew "blueutil"
-brew "bzip2"
 brew "glib"
 brew "pkg-config"
+brew "lzo"
 brew "cairo"
-brew "carthage"
+brew "libtool"
 brew "cask"
-brew "choose-gui"
-brew "cli53"
 brew "cmake"
-brew "cocoapods"
+brew "cmocka"
 brew "ctop"
-brew "deno"
-brew "diskonaut"
-brew "dust"
+brew "dos2unix"
+brew "doxygen"
 brew "exa"
-brew "fd"
-brew "fnm"
 brew "fzf"
-brew "geos"
-brew "krb5"
-brew "libxml2"
-brew "libdap"
-brew "libpq"
-brew "libspatialite"
-brew "numpy"
-brew "poppler"
-brew "gdal"
-brew "gh"
-brew "git-delta"
-brew "git-open"
-brew "gitui"
+brew "gdb"
+brew "git-extras"
 brew "gnupg"
-brew "gradle"
+brew "go"
+brew "gobject-introspection"
+brew "golangci-lint"
+brew "harfbuzz"
+brew "pango"
+brew "graphviz"
 brew "grex"
-brew "ncurses"
-brew "htop"
-brew "httpie"
-brew "hyperfine"
-brew "oniguruma"
-brew "jq"
-brew "node"
-brew "lerna"
-brew "libimobiledevice", args: ["HEAD"]
-brew "lua"
-brew "luarocks"
+brew "makensis"
+brew "man2html"
 brew "mas"
 brew "maven"
-brew "navi"
-brew "ncdu"
-brew "noti"
-brew "podman"
-brew "postgresql"
-brew "prettyping"
-brew "procs"
+brew "mingw-w64"
+brew "mockery"
+brew "mono", link: false
+brew "node"
+brew "pre-commit", link: false
 brew "pyenv"
+brew "pyenv-virtualenv"
 brew "python@3.8"
-brew "redis"
-brew "shellcheck"
 brew "starship"
-brew "telnet"
-brew "thefuck"
-brew "tig"
-brew "tldr"
-brew "toilet"
-brew "tokei"
-brew "tree"
-brew "truncate"
-brew "watchman"
+brew "truncate", link: false
 brew "wget"
 brew "yarn"
-brew "zlib"
-brew "zsh"
-brew "zsh-syntax-highlighting"
-brew "cjbassi/ytop/ytop"
 brew "heroku/brew/heroku"
 brew "jesseduffield/lazydocker/lazydocker"
-brew "localazy/tools/localazy"
-brew "mykolaharmash/git-jump/git-jump"
-brew "nektos/tap/act"
-brew "rasukarusan/tap/fzf-chrome-active-tab"
-brew "rigellute/tap/spotify-tui"
-brew "sambadevi/powerlevel9k/powerlevel9k"
-brew "wix/brew/applesimutils"
-cask "adoptopenjdk8"
-cask "appcleaner"
-cask "firefox"
-cask "font-hack-nerd-font"
-cask "responsively"
-mas "Agenda", id: 1287445660
-mas "Battery Indicator", id: 1206020918
-mas "Color Picker", id: 641027709
-mas "Dato", id: 1470584107
-mas "DemoPro", id: 1384206666
-mas "Divvy", id: 413857545
-mas "Gapplin", id: 768053424
-mas "GIPHY CAPTURE", id: 668208984
+mas "com.adriangranados.wifiexplorerlite", id: 1408727408
+mas "GarageBand", id: 682658836
 mas "GoodNotes", id: 1444383602
-mas "IP Scanner", id: 404167149
-mas "iPhoto", id: 408981381
+mas "iMovie", id: 408981434
 mas "Irvue", id: 1039633667
-mas "Jira", id: 1475897096
 mas "Keynote", id: 409183694
-mas "MenubarClock", id: 492167985
-mas "Micro Snitch", id: 972028355
+mas "Magnet", id: 441258766
 mas "NordVPN IKE", id: 1116599239
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
-mas "PasteBox", id: 928940999
-mas "RunCat", id: 1429033973
+mas "Session", id: 1521432881
 mas "Slack", id: 803453959
 mas "Spark", id: 1176895641
 mas "Telegram", id: 747648890
 mas "The Unarchiver", id: 425424353
 mas "Toggl Track", id: 957734279
-mas "Unclutter", id: 577085396
-mas "Vectornator", id: 1219074514
-mas "WiFi Explorer", id: 494803304
 mas "Xcode", id: 497799835
-mas "ZoomMe", id: 1437487517

@@ -2,12 +2,14 @@
 
 mkdir -p $HOME/.config
 mkdir -p $HOME/.hammerspoon
+mkdir -p $HOME/desarrollo
+
 
 echo " Applying symlinks"
 ln -sf "$DOTFILES_PATH"/procs/.procs.toml "$HOME"/.procs.toml
 ln -sf "$DOTFILES_PATH"/vim/.vimrc "$HOME"/.vimrc
 ln -sf "$DOTFILES_PATH"/git/.gitconfig "$HOME"/.gitconfig
-ln -sf "$DOTFILES_PATH"/git/.gitignore "$HOME"/.gitignore
+ln -sf "$DOTFILES_PATH"/git/.gitignore_global "$HOME"/desarrollo/.gitignore_global
 ln -sf "$DOTFILES_PATH"/git/.gitattributes "$HOME"/.gitattributes
 ln -sf "$DOTFILES_PATH"/starship/starship.toml "$HOME"/.config/starship.toml
 ln -sf "$DOTFILES_PATH"/hammerspoon/init.lua "$HOME"/.hammerspoon/init.lua

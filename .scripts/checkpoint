@@ -11,6 +11,8 @@ echo 'Brew apps exported!'
 pip freeze >"$DOTFILES_PATH/langs/python/requirements.txt"
 echo 'Python apps exported!'
 
+set +u
+
 if [ -d "$PRIVATE_FOLDER" ]; then
   echo "Sync private files to private folder"
   mkdir -p "$PRIVATE_FOLDER/zsh/exports"
@@ -18,6 +20,8 @@ if [ -d "$PRIVATE_FOLDER" ]; then
   cp "$DOTFILES_PATH/zsh/exports/private-exports.sh" "$PRIVATE_FOLDER/zsh/exports/private-exports.sh"
   cp "$DOTFILES_PATH/zsh/aliases/private-aliases.sh" "$PRIVATE_FOLDER/zsh/aliases/private-aliases.sh"
 fi
+
+set -u
 
 cd "$DOTFILES_PATH" || exit
 git pull

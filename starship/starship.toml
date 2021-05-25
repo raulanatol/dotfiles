@@ -1,13 +1,12 @@
 add_newline = false
 format = """\
-    $hostname\
-    $python\
-    $rust\
+    $character\
     $directory\
+    $java\
+    $python\
+    $golang\
     $git_branch\
     $git_status\
-    $line_break\
-    $character\
     """
 
 [character]
@@ -25,11 +24,11 @@ format = "[$symbol$branch]($style) "
 symbol = "🐙 "
 
 [git_status]
-conflicted = "🏳"
-ahead = "🏎💨"
-behind = "😰"
+conflicted = "🤯"
+ahead = "👆"
+behind = "👇"
 diverged = "😵"
-untracked = "🤷‍"
+untracked = "🤷‍♀️"
 stashed = "📦"
 modified = "📝"
 staged = ' [++$count](green)'
@@ -51,7 +50,12 @@ style = "yellow"
 format = '[${symbol}${pyenv_prefix}${version}( \($virtualenv\))]($style) '
 symbol = "🐍 "
 
+[java]
+format = '[${symbol}(${version} )]($style) '
+
+[golang]
+format = '[$symbol($version )]($style) '
+
 [username]
 style_root = "bold green"
 show_always = true
-#prefix = "as
