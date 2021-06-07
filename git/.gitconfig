@@ -5,6 +5,9 @@
 [includeIf "gitdir:~/"]
   path = .gitconfig-personal
 
+[url "ssh://git@gitlab.services/"]
+        insteadOf = https://gitlab.services/
+
 [alias]
 	s = status
 	ch = checkout

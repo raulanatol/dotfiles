@@ -4,9 +4,9 @@ JAVA_PATH="$(/usr/libexec/java_home -v 1.8)"
 ANDROID_HOME="$HOME/Library/Android/sdk"
 GRAILS_HOME=/Users/yodra/desarrollo/leanmind/netex/grails-2.5.5
 GOPATH=$HOME/go
+GOROOT="/usr/local/opt/go/libexec"
 PYENV_PATH="$HOME/.pyenv"
 PYENV_ROOT="$HOME/.pyenv"
-GOROOT="/usr/local/opt/go/libexec"
 
 IDEA_SCRIPTS="$HOME/utils/idea_scripts"
 MISC_SCRIPTS="$HOME/utils/misc"
@@ -16,7 +16,6 @@ export HOMEBREW_NO_ANALYTICS=true
 export HOMEBREW_BUNDLE_FILE_PATH="${DOTFILES_PATH}/brew/Brewfile"
 
 export EDITOR='vim'
-export CERT_PATH="/Users/raulanatol/utils/cert_path"
 export WORKON_HOME="$HOME/.virtualenvs"
 
 # LiFull Projects
