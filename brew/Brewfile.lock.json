@@ -11,7 +11,7 @@
         "revision": "209f59cda890de69b74c224982591642c21323d3"
       },
       "homebrew/bundle": {
-        "revision": "916be5238f2fade31240a763a4f8da4b65a97ae5"
+        "revision": "00d2c0a5f41515d643c31952f61433c1b5677faf"
       },
       "homebrew/cask": {
         "revision": "5746d9d0614f6e2c83d2c8d5fb97928e2ed3c4cd"
@@ -20,10 +20,10 @@
         "revision": "9899ab349852a15fbc634721356bec10e05d5f11"
       },
       "homebrew/core": {
-        "revision": "a2d87c8c741cc26a855238b10df6ae4d589d7c0e"
+        "revision": "7e1f01bce4a25aebcb03c434d803038227a2d48b"
       },
       "homebrew/services": {
-        "revision": "db39d0232a09a592f1298ee97ea80f7f622c0e77"
+        "revision": "bb6985dcefb3468a32ebc81dfe4b60acc3d59987"
       },
       "nektos/tap": {
         "revision": "da45f998d01fe55157361238a5792c1a22bae29b"
@@ -35,7 +35,7 @@
         "revision": "55b23679c79ce928006974ccc1706a7819746627"
       },
       "heroku/brew": {
-        "revision": "7efaaef5a2b3ea46573a978bd97c7a6036264c7f"
+        "revision": "f24db422272cb04e2da762bc08c7e20063306825"
       },
       "jesseduffield/lazydocker": {
         "revision": "098099fc178d4d2fb4133b02f9ea56deabcc2dc9"
@@ -1542,7 +1542,7 @@
         }
       },
       "heroku/brew/heroku": {
-        "version": "7.54.0",
+        "version": "7.54.1",
         "bottle": false
       },
       "jesseduffield/lazydocker/lazydocker": {
@@ -3375,9 +3375,9 @@
         "macOS": "10.15.6"
       },
       "big_sur": {
-        "HOMEBREW_VERSION": "3.1.9",
+        "HOMEBREW_VERSION": "3.1.11",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "a2d87c8c741cc26a855238b10df6ae4d589d7c0e",
+        "Homebrew/homebrew-core": "7e1f01bce4a25aebcb03c434d803038227a2d48b",
         "CLT": "12.5.0.22.9",
         "Xcode": "12.5",
         "macOS": "11.4"
