@@ -87,6 +87,7 @@ brew "procs"
 brew "pyenv"
 brew "python@3.8"
 brew "redis"
+brew "semgrep"
 brew "shellcheck"
 brew "starship"
 brew "telnet"
@@ -128,7 +129,6 @@ mas "Gapplin", id: 768053424
 mas "GIPHY CAPTURE", id: 668208984
 mas "GoodNotes", id: 1444383602
 mas "IP Scanner", id: 404167149
-mas "iPhoto", id: 408981381
 mas "Irvue", id: 1039633667
 mas "Jira", id: 1475897096
 mas "Keynote", id: 409183694

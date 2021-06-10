@@ -38,7 +38,7 @@ fastapi==0.48.0
 filelock==3.0.12
 flake8==3.7.8
 future==0.16.0
-GDAL==3.2.2
+GDAL==3.3.0
 gitlint==0.12.0
 identify==1.5.10
 idna==2.10
@@ -99,6 +99,7 @@ pyrsistent==0.17.3
 python-dateutil==2.8.1
 python-dotenv==0.11.0
 pytz==2020.4
+pywatchman==1.4.1
 PyYAML==5.3.1
 pyzbar==0.1.8
 pyzmq==20.0.0
