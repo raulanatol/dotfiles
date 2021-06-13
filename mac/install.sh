@@ -20,6 +20,9 @@ sudo nvram SystemAudioVolume=" "
 
 # Play user interface sound effects: false
 defaults write com.apple.systemsound "com.apple.sound.uiaudio.enabled" -int 0
+defaults write com.apple.sound.beep.flash 0
+defaults write com.apple.sound.beep.volume 0
+defaults write com.apple.sound.uiaudio.enabled 0
 
 # Disable Big Sur Chime
 sudo nvram StartupMute=%01
@@ -38,7 +41,33 @@ sudo defaults write /Library/Preferences/com.apple.loginwindow showInputMenu -bo
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool true
 defaults write NSGlobalDomain KeyRepeat -int 1
 defaults write NSGlobalDomain InitialKeyRepeat -int 15
+defaults write NSGlobalDomain com.apple.keyboard.fnState 0
 
+# Trackpad
+defaults write NSGlobalDomain com.apple.trackpad.forceClick 1
+defaults write NSGlobalDomain com.apple.trackpad.scaling 1
+
+#
+defaults write NSGlobalDomain AppleActionOnDoubleClick Maximize
+defaults write NSGlobalDomain AppleAntiAliasingThreshold 4
+defaults write NSGlobalDomain AppleAquaColorVariant 1
+defaults write NSGlobalDomain AppleInterfaceStyle Dark
+defaults write NSGlobalDomain AppleKeyboardUIMode 2
+defaults write NSGlobalDomain AppleMeasurementUnits Centimeters
+defaults write NSGlobalDomain AppleMetricUnits 1
+defaults write NSGlobalDomain AppleShowScrollBars Always;
+defaults write NSGlobalDomain AppleTemperatureUnit Celsius;
+
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseButtonDivision 55
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseButtonMode TwoButton
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseHorizontalScroll 1
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseMomentumScroll 1
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseOneFingerDoubleTapGesture 0
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseTwoFingerDoubleTapGesture 3
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseTwoFingerHorizSwipeGesture 2
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse MouseVerticalScroll 1
+defaults write com.apple.driver.AppleBluetoothMultitouch.mouse UserPreferences 1
+defaults write NSGlobalDomain com.apple.mouse.scaling 2
 ###############################################################################
 # Screen                                                                      #
 ###############################################################################
