@@ -3,13 +3,13 @@
 utils::install_macos() {
   # Install brew if not installed
   if ! [ -x "$(command -v brew)" ]; then
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    eval "$(/opt/homebrew/bin/brew shellenv)"
   fi
 
   # All apps (This line is 2 times because there are dependencies between brew cask and brew)
   brew bundle --file="$DOTFILES_PATH/brew/Brewfile" || true
   brew bundle --file="$DOTFILES_PATH/brew/Brewfile"
-
   # Correct paths (so, we handle all with $PATH)
   sudo truncate -s 0 /etc/paths
 

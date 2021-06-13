@@ -24,7 +24,6 @@ source $DOTFILES_PATH/zsh/bindings/reverse_search.zsh
 eval "$(starship init zsh)"
 
 ## Init extra scripts
-source $DOTFILES_PATH/langs/python/pyenv/init.sh
 source $DOTFILES_PATH/langs/python/conda/init.sh
 
 # Atuin

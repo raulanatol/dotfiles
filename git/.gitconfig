@@ -28,7 +28,7 @@
 [user]
 	email = raul@natol.es
 	name = raulanatol
-	signingkey = A43D4B3EB1C2B235514E42E3B0ECE67DFB6632D8
+	signingkey = 7118F1EA5D3002E1
 
 [core]
 	editor = vim
@@ -36,7 +36,7 @@
 	pager = delta
 
 [commit]
-	gpgSign = true
+	gpgsign = true
 
 [tag]
   gpgSign = true
@@ -73,3 +73,6 @@
 
 [init]
 	defaultBranch = main
+
+[gpg]
+	program = gpg

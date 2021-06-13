@@ -7,6 +7,14 @@ SONAR_SCANNER="$HOME/utils/sonar-scanner"
 PYENV_PATH="$HOME/.pyenv"
 DENO_INSTALL="$HOME/.deno"
 
+HOMEBREW_PREFIX="/opt/homebrew";
+HOMEBREW_CELLAR="/opt/homebrew/Cellar";
+HOMEBREW_REPOSITORY="/opt/homebrew";
+MANPATH="/opt/homebrew/share/man${MANPATH+:$MANPATH}:";
+INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}";
+
+GPG_TTY=$(tty)
+
 MISC_SCRIPTS="$HOME/utils/misc"
 IDEA_SCRIPTS="$HOME/utils/idea_scripts"
 
@@ -31,7 +39,10 @@ paths=(
   "$ANDROID_HOME/tools"
   "$ANDROID_HOME/tools/bin"
   "$ANDROID_HOME/platform-tools"
+  "/opt/homebrew/bin"
+  "/opt/homebrew/sbin"
   "$PYENV_PATH/bin"
+  "$PYENV_PATH/shims"
   "/bin"
   "/usr/local/bin"
   "/usr/local/opt/gnu-sed/libexec/gnubin"

@@ -7,3 +7,4 @@ alias te="E2E=true npm run test"
 #alias n="nvm use"
 alias n="fnm use"
 alias nd="fnm use default"
+alias pip='pip3'

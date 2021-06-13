@@ -7,7 +7,6 @@ tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
 tap "homebrew/services"
-tap "jesseduffield/lazydocker"
 tap "koekeishiya/formulae"
 tap "localazy/tools"
 tap "mykolaharmash/git-jump"
@@ -98,6 +97,7 @@ brew "toilet"
 brew "tokei"
 brew "tree"
 brew "truncate"
+brew "virtualenv"
 brew "watchman"
 brew "wget"
 brew "yarn"
@@ -106,7 +106,6 @@ brew "zsh"
 brew "zsh-syntax-highlighting"
 brew "cjbassi/ytop/ytop"
 brew "heroku/brew/heroku"
-brew "jesseduffield/lazydocker/lazydocker"
 brew "localazy/tools/localazy"
 brew "mykolaharmash/git-jump/git-jump"
 brew "nektos/tap/act"
@@ -116,8 +115,11 @@ brew "sambadevi/powerlevel9k/powerlevel9k"
 brew "wix/brew/applesimutils"
 cask "adoptopenjdk8"
 cask "appcleaner"
+cask "atom"
 cask "firefox"
 cask "font-hack-nerd-font"
+cask "font-jetbrains-mono"
+cask "iterm2"
 cask "responsively"
 mas "Agenda", id: 1287445660
 mas "Battery Indicator", id: 1206020918
@@ -126,10 +128,11 @@ mas "Dato", id: 1470584107
 mas "DemoPro", id: 1384206666
 mas "Divvy", id: 413857545
 mas "Gapplin", id: 768053424
+mas "GarageBand", id: 682658836
 mas "GIPHY CAPTURE", id: 668208984
 mas "GoodNotes", id: 1444383602
+mas "iMovie", id: 408981434
 mas "IP Scanner", id: 404167149
-mas "iPhoto", id: 408981381
 mas "Irvue", id: 1039633667
 mas "Jira", id: 1475897096
 mas "Keynote", id: 409183694
