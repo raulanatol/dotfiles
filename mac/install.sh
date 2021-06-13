@@ -27,11 +27,14 @@ defaults write com.apple.sound.uiaudio.enabled 0
 # Disable Big Sur Chime
 sudo nvram StartupMute=%01
 
+# Timezone 🏝
+sudo systemsetup -settimezone "Atlantic/Canary" > /dev/null
+
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
 ###############################################################################
 
-# Show language menu in the top right corner of the boot screen
+# 🇺🇳 Show language menu in the top right corner of the boot screen
 sudo defaults write /Library/Preferences/com.apple.loginwindow showInputMenu -bool true
 
 # Disable “natural” (Lion-style) scrolling
