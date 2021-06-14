@@ -1,3 +1,0 @@
-awsebcli==3.19.4
-virtualenv==20.2.2
-virtualenvwrapper==4.8.4
