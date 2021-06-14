@@ -154,6 +154,40 @@ defaults write com.apple.dock showhidden -bool true
 # Only use UTF-8 in Terminal.app
 defaults write com.apple.terminal StringEncodings -array 4
 
+
+###############################################################################
+# Dato                                                                        #
+###############################################################################
+
+defaults write com.sindresorhus.Dato showDateInMenuBar 0
+defaults write com.sindresorhus.Dato showMonthInMenuBar 0
+defaults write com.sindresorhus.Dato showTimeInMenuBar 1
+defaults write com.sindresorhus.Dato showWeekDayInMenuBar 1
+defaults write com.sindresorhus.Dato showWeekNumberInMenu 1
+defaults write com.sindresorhus.Dato showWeekNumbersInCalendar 1
+
+###############################################################################
+# Divvy                                                                       #
+###############################################################################
+defaults write com.mizage.Divvy useGlobalHotkey 1
+
+
+###############################################################################
+# Unclutter                                                                       #
+###############################################################################
+defaults write com.softwareambience.Unclutter NSNavLastRootDirectory ~/odrive/s3/unclutter/notes
+defaults write com.softwareambience.Unclutter FilesPath /Users/raulanatol/odrive/s3/unclutter/files
+defaults write com.softwareambience.Unclutter NSNavLastRootDirectory ~/odrive/s3/unclutter/notes
+defaults write com.softwareambience.Unclutter NotesFolder ~/odrive/s3/unclutter/notes
+
+###############################################################################
+# PasteBox                                                                    #
+###############################################################################
+
+defaults write com.astevic.PasteBox launchAtLog 1
+defaults write com.astevic.PasteBox setDefaultData 1
+defaults write com.astevic.PasteBox showAlertAtStartup 0
+
 ###############################################################################
 # Activity Monitor                                                            #
 ###############################################################################

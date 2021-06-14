@@ -29,7 +29,8 @@ if os::is_macos; then
   utils::install_macos
 fi
 
-pip3 install "$DOTFILES_PATH/langs/python/requirements.txt"
+source "$DOTFILES_PATH/langs/python/install.sh"
+source "$DOTFILES_PATH/misc/install.sh"
 
 sout::info " 👾 ZSH as the default shell"
 chsh -s "$(command -v zsh)"

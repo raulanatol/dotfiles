@@ -13,8 +13,6 @@ HOMEBREW_REPOSITORY="/opt/homebrew";
 MANPATH="/opt/homebrew/share/man${MANPATH+:$MANPATH}:";
 INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}";
 
-GPG_TTY=$(tty)
-
 MISC_SCRIPTS="$HOME/utils/misc"
 IDEA_SCRIPTS="$HOME/utils/idea_scripts"
 
