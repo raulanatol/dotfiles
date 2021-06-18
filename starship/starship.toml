@@ -9,7 +9,7 @@ format = """\
     $line_break\
     $character\
     """
-command_timeout = 1000
+command_timeout = 10000
 
 [character]
 success_symbol = "[➜](bold green)"

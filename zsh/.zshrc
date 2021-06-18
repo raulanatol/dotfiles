@@ -28,3 +28,6 @@ source $DOTFILES_PATH/langs/python/conda/init.sh
 
 # Atuin
 source $DOTFILES_PATH/zsh/extra/atuin.sh
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
