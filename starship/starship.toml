@@ -2,10 +2,12 @@ add_newline = false
 format = """\
     $hostname\
     $python\
+    $nodejs\
     $rust\
     $directory\
     $git_branch\
     $git_status\
+    $cmd_duration\
     $line_break\
     $character\
     """
@@ -51,6 +53,9 @@ style = "yellow"
 [python]
 format = '[${symbol}${pyenv_prefix}${version}( \($virtualenv\))]($style) '
 symbol = "🐍 "
+
+[nodejs]
+format = "[$symbol($version )]($style)"
 
 [username]
 style_root = "bold green"
