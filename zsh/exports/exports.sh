@@ -1,4 +1,3 @@
-PYTHON_PATH='/usr/local/opt/python/'
 RUST_PATH="$HOME/.cargo"
 JAVA_PATH="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home"
 ANDROID_HOME="$HOME/Library/Android/sdk"
@@ -23,10 +22,11 @@ export HOMEBREW_BUNDLE_FILE_PATH="${DOTFILES_PATH}/brew/Brewfile"
 export EDITOR='vim'
 export WORKON_HOME="$HOME/.virtualenvs"
 
+export VIRTUAL_ENV_DISABLE_PROMPT=1
+
 paths=(
   "$HOME/bin"
   "$UTILSH_PATH/bin"
-  "$PYTHON_PATH/libexec/bin"
   "$RUST_PATH/bin"
   "$DENO_INSTALL/bin"
   "$IDEA_SCRIPTS"
