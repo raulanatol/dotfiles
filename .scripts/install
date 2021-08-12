@@ -3,7 +3,7 @@
 set -eo pipefail
 
 DOTFILES_PATH=$HOME/.dotfiles
-ZIM_HOME="$DOTFILES_PATH/modules/zimfw"
+#ZIM_HOME="$DOTFILES_PATH/modules/zimfw"
 
 source "$DOTFILES_PATH/shell/sout"
 source "$DOTFILES_PATH/shell/os"
@@ -14,8 +14,9 @@ git submodule init
 git submodule update
 
 echo " 🍉 Installing zim"
-zsh "$ZIM_HOME/zimfw.zsh" upgrade
-zsh "$ZIM_HOME/zimfw.zsh" install
+curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
+#zsh "$ZIM_HOME/zimfw.zsh" upgrade
+#zsh "$ZIM_HOME/zimfw.zsh" install
 
 if [ ! -d "$HOME/.utilsh" ]; then
   if [ -z "$UTILSH_PATH" ]; then
