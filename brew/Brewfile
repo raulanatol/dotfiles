@@ -5,9 +5,19 @@ tap "heroku/brew"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"
 tap "homebrew/core"
 tap "homebrew/services"
-tap "jesseduffield/lazydocker"
+tap "koekeishiya/formulae"
+tap "localazy/tools"
+tap "mongodb/brew"
+tap "mykolaharmash/git-jump"
+tap "nektos/tap"
+tap "rasukarusan/tap"
+tap "rigellute/tap"
+tap "sambadevi/powerlevel9k"
+tap "wix/brew"
+brew "archey"
 brew "atuin"
 brew "autoconf"
 brew "automake"
@@ -15,6 +25,9 @@ brew "xz"
 brew "python@3.9"
 brew "awscli"
 brew "bat"
+brew "blueutil"
+brew "bzip2"
+brew "libffi"
 brew "glib"
 brew "pkg-config"
 brew "lzo"
@@ -26,10 +39,15 @@ brew "cmocka"
 brew "ctop"
 brew "dos2unix"
 brew "doxygen"
+brew "curl"
+brew "diskonaut"
+brew "dust"
 brew "exa"
 brew "fnm"
 brew "fzf"
 brew "gdb"
+brew "gh"
+brew "git-delta"
 brew "git-extras"
 brew "git-open"
 brew "gnupg"
@@ -60,8 +78,22 @@ brew "heroku/brew/heroku"
 brew "jesseduffield/lazydocker/lazydocker"
 cask "font-awesome-terminal-fonts"
 cask "font-hack-nerd-font"
+cask "font-jetbrains-mono"
+cask "font-jetbrains-mono-nerd-font"
+cask "gas-mask"
 cask "robo-3t"
-mas "com.adriangranados.wifiexplorerlite", id: 1408727408
+cask "google-chrome"
+cask "google-chrome-canary"
+cask "insomnia"
+cask "iterm2"
+cask "jetbrains-toolbox"
+cask "miro"
+cask "notion"
+cask "robo-3t"
+cask "skype"
+cask "spotify"
+cask "twitch"
+cask "zoom"
 mas "GarageBand", id: 682658836
 mas "GoodNotes", id: 1444383602
 mas "iMovie", id: 408981434
@@ -71,6 +103,7 @@ mas "Magnet", id: 441258766
 mas "NordVPN IKE", id: 1116599239
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
+mas "PasteBox", id: 928940999
 mas "Session", id: 1521432881
 mas "Slack", id: 803453959
 mas "Spark", id: 1176895641
@@ -78,3 +111,4 @@ mas "Telegram", id: 747648890
 mas "The Unarchiver", id: 425424353
 mas "Toggl Track", id: 957734279
 mas "Xcode", id: 497799835
+mas "Yubico Authenticator", id: 1497506650

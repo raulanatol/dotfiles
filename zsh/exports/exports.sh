@@ -8,6 +8,13 @@ GOROOT="/usr/local/opt/go/libexec"
 PYENV_PATH="$HOME/.pyenv"
 PYENV_ROOT="$HOME/.pyenv"
 
+HOMEBREW_PREFIX="/opt/homebrew";
+HOMEBREW_CELLAR="/opt/homebrew/Cellar";
+HOMEBREW_REPOSITORY="/opt/homebrew";
+MANPATH="/opt/homebrew/share/man${MANPATH+:$MANPATH}:";
+INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}";
+
+MISC_SCRIPTS="$HOME/utils/misc"
 IDEA_SCRIPTS="$HOME/utils/idea_scripts"
 MISC_SCRIPTS="$HOME/utils/misc"
 
@@ -18,12 +25,12 @@ export HOMEBREW_BUNDLE_FILE_PATH="${DOTFILES_PATH}/brew/Brewfile"
 export EDITOR='vim'
 export WORKON_HOME="$HOME/.virtualenvs"
 
-# LiFull Projects
-export GOPRIVATE="gitlab.services/crawling/go-core"
+export VIRTUAL_ENV_DISABLE_PROMPT=1
 
 paths=(
   "$HOME/bin"
   "$PYTHON_PATH/libexec/bin"
+  "$UTILSH_PATH/bin"
   "$RUST_PATH/bin"
   "$IDEA_SCRIPTS"
   "$MISC_SCRIPTS"
@@ -32,11 +39,13 @@ paths=(
   "$ANDROID_HOME/tools"
   "$ANDROID_HOME/tools/bin"
   "$ANDROID_HOME/platform-tools"
+  "/opt/homebrew/bin"
+  "/opt/homebrew/sbin"
   "$PYENV_PATH/bin"
   "$GRAILS_HOME/bin"
   "$GOPATH/bin"
   "$GOROOT/bin"
-  "/Users/yodra/.utilsh/bin"
+  "$PYENV_PATH/shims"
   "/bin"
   "/usr/local/bin"
   "/usr/local/opt/gnu-sed/libexec/gnubin"

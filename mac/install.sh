@@ -20,15 +20,21 @@ sudo nvram SystemAudioVolume=" "
 
 # Play user interface sound effects: false
 defaults write com.apple.systemsound "com.apple.sound.uiaudio.enabled" -int 0
+defaults write com.apple.sound.beep.flash 0
+defaults write com.apple.sound.beep.volume 0
+defaults write com.apple.sound.uiaudio.enabled 0
 
 # Disable Big Sur Chime
 sudo nvram StartupMute=%01
 
-################################################################################
-## Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
-################################################################################
+# Timezone 🏝
+sudo systemsetup -settimezone "Atlantic/Canary" > /dev/null
 
-# Show language menu in the top right corner of the boot screen
+###############################################################################
+# Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
+###############################################################################
+
+# 🇺🇳 Show language menu in the top right corner of the boot screen
 sudo defaults write /Library/Preferences/com.apple.loginwindow showInputMenu -bool true
 
 # Disable “natural” (Lion-style) scrolling
@@ -39,7 +45,7 @@ defaults write NSGlobalDomain KeyRepeat -int 2
 defaults write NSGlobalDomain InitialKeyRepeat -int 68
 
 ################################################################################
-## Screen                                                                      #
+# Screen                                                                      #
 ################################################################################
 
 # Require password immediately after sleep or screen saver begins
@@ -54,7 +60,7 @@ defaults write com.apple.screencapture location -string "${HOME}/Downloads/scree
 defaults write NSGlobalDomain _HIHideMenuBar -bool false
 
 ################################################################################
-## Finder                                                                      #
+# Finder                                                                      #
 ################################################################################
 
 # Finder: show all filename extensions
@@ -75,9 +81,9 @@ defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 # Disable the warning when changing a file extension
 defaults write com.apple.finder FXEnableExtensionChangeWarning -bool false
 
-################################################################################
-## Dock, Dashboard, and hot corners                                            #
-################################################################################
+###############################################################################
+# Dock, Dashboard, and hot corners                                            #
+###############################################################################
 
 # Enable highlight hover effect for the grid view of a stack (Dock)
 defaults write com.apple.dock mouse-over-hilite-stack -bool true
@@ -111,16 +117,24 @@ defaults write com.apple.dock autohide -bool true
 # Make Dock icons of hidden applications translucent
 defaults write com.apple.dock showhidden -bool true
 
-################################################################################
-## Terminal & iTerm 2                                                          #
-################################################################################
+###############################################################################
+# Terminal & iTerm 2                                                          #
+###############################################################################
 
 # Only use UTF-8 in Terminal.app
 defaults write com.apple.terminal StringEncodings -array 4
 
-################################################################################
-## Activity Monitor                                                            #
-################################################################################
+###############################################################################
+# PasteBox                                                                    #
+###############################################################################
+
+defaults write com.astevic.PasteBox launchAtLog 1
+defaults write com.astevic.PasteBox setDefaultData 1
+defaults write com.astevic.PasteBox showAlertAtStartup 0
+
+###############################################################################
+# Activity Monitor                                                            #
+###############################################################################
 
 # Show the main window when launching Activity Monitor
 defaults write com.apple.ActivityMonitor OpenMainWindow -bool true
