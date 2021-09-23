@@ -3,13 +3,13 @@
 # Dependency: emoj (https://github.com/sindresorhus/emoj)
 # Install via npm: `npm install --global emoj`
 
-# @raycast.title Search and Copy First Related Emoji
+# @raycast.title Search Emojis
 # @raycast.author Caleb Stauffer
 # @raycast.authorURL https://github.com/crstauf
-# @raycast.description Copy first emoji related to input.
+# @raycast.description Search for emojis related to input.
 
 # @raycast.icon 📙
-# @raycast.mode compact
+# @raycast.mode fullOutput
 # @raycast.packageName Communication
 # @raycast.schemaVersion 1
 
@@ -20,11 +20,14 @@ if ! command -v emoj &> /dev/null; then
 	exit 1;
 fi
 
-emojis=$(emoj -c "$1")
+emojis=$(emoj "$1")
 
 if [ -z "$emojis" ]; then
 	echo "No emojis found for \"${1}\""
 	exit 0
 fi
 
-echo "Copied emoji for \"$1\""
+echo "Emojis found for \"$1\":"
+echo ""
+echo "$emojis"
+echo ""
