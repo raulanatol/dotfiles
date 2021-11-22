@@ -1,11 +1,9 @@
 RUST_PATH="$HOME/.cargo"
-JAVA_PATH="/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home"
 ANDROID_HOME="$HOME/Library/Android/sdk"
 ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"
 SONAR_SCANNER="$HOME/utils/sonar-scanner"
 PYENV_PATH="$HOME/.pyenv"
 DENO_INSTALL="$HOME/.deno"
-
 HOMEBREW_PREFIX="/opt/homebrew";
 HOMEBREW_CELLAR="/opt/homebrew/Cellar";
 HOMEBREW_REPOSITORY="/opt/homebrew";
@@ -14,6 +12,12 @@ INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}";
 
 MISC_SCRIPTS="$HOME/utils/misc"
 IDEA_SCRIPTS="$HOME/utils/idea_scripts"
+
+# Java
+export JAVA_HOME=$(/usr/libexec/java_home) # Latest
+export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
+export JAVA_11_HOME=$(/usr/libexec/java_home -v11)
+export JAVA_14_HOME=$(/usr/libexec/java_home -v14)
 
 export HOMEBREW_AUTO_UPDATE_SECS=86400
 export HOMEBREW_NO_ANALYTICS=true
@@ -34,7 +38,6 @@ paths=(
   "$IDEA_SCRIPTS"
   "$MISC_SCRIPTS"
   "$SONAR_SCANNER/bin"
-  "$JAVA_PATH/bin"
   "$ANDROID_HOME/emulator"
   "$ANDROID_HOME/tools"
   "$ANDROID_HOME/tools/bin"

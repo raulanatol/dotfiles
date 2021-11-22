@@ -9,3 +9,8 @@ alias nd="fnm use default"
 
 alias mongod-status='brew services list'
 alias mongod-stop='brew services stop mongodb-community'
+
+# Java
+alias java8='export JAVA_HOME=$JAVA_8_HOME'
+alias java11='export JAVA_HOME=$JAVA_11_HOME'
+alias java14='export JAVA_HOME=$JAVA_14_HOME'
