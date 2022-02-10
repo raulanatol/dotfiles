@@ -2,11 +2,11 @@
 
 set -uo pipefail
 
-brew services stop --all
-brew bundle dump --file="$HOMEBREW_BUNDLE_FILE_PATH" --force
-brew bundle cleanup --file="$HOMEBREW_BUNDLE_FILE_PATH" --force
-brew bundle install --file="$HOMEBREW_BUNDLE_FILE_PATH"
-echo 'Brew apps exported!'
+#brew services stop --all
+#brew bundle dump --file="$HOMEBREW_BUNDLE_FILE_PATH" --force
+#brew bundle cleanup --file="$HOMEBREW_BUNDLE_FILE_PATH" --force
+#brew bundle install --file="$HOMEBREW_BUNDLE_FILE_PATH"
+#echo 'Brew apps exported!'
 
 # ------------
 # Python save
