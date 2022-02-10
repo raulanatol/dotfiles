@@ -22,6 +22,7 @@ brew "atuin"
 brew "autoenv"
 brew "sqlite"
 brew "xz"
+brew "python@3.10"
 brew "autojump"
 brew "automake"
 brew "aws-elasticbeanstalk", link: false
@@ -52,9 +53,9 @@ brew "deno"
 brew "diskonaut"
 brew "dust"
 brew "exa"
+brew "folly"
 brew "fd"
 brew "fnm"
-brew "folly"
 brew "fzf"
 brew "geos"
 brew "libxml2"
@@ -195,6 +196,7 @@ cask "zeplin"
 cask "zoom"
 mas "Battery Indicator", id: 1206020918
 mas "Color Picker", id: 641027709
+mas "com.imthekingofmac.ZoomMe", id: 1437487517
 mas "Dato", id: 1470584107
 mas "DemoPro", id: 1384206666
 mas "Divvy", id: 413857545
@@ -206,6 +208,7 @@ mas "Grammarly for Safari", id: 1462114288
 mas "Hand Mirror", id: 1502839586
 mas "iMovie", id: 408981434
 mas "IP Scanner", id: 404167149
+mas "iPhoto", id: 408981381
 mas "Irvue", id: 1039633667
 mas "Jira", id: 1475897096
 mas "Keynote", id: 409183694
@@ -216,6 +219,7 @@ mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "PasteBox", id: 928940999
 mas "RunCat", id: 1429033973
+mas "Session", id: 1521432881
 mas "Slack", id: 803453959
 mas "Spark", id: 1176895641
 mas "Telegram", id: 747648890
@@ -226,4 +230,3 @@ mas "Vectornator", id: 1219074514
 mas "WiFi Explorer", id: 494803304
 mas "Xcode", id: 497799835
 mas "Yubico Authenticator", id: 1497506650
-mas "ZoomMe", id: 1437487517
