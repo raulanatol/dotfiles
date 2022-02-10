@@ -19,3 +19,4 @@ ln -sf "$DOTFILES_PATH"/zim/.zimrc "$HOME"/.zimrc
 ln -sf "$DOTFILES_PATH"/langs/ruby/gemrc.symlink "$HOME"/.gemrc
 ln -sf "$DOTFILES_PATH"/taskwarrior/.taskrc "$HOME"/.taskrc
 ln -sf "$DOTFILES_PATH"/apps/alacritty/alacritty.yml "$HOME"/.config/alacritty/alacritty.yml
+ln -sf "$HOME/Library/Mobile\ Documents/iCloud~md~obsidian/Documents" "$HOME/Brain"

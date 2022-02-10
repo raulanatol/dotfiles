@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>AlternateMouseScroll</key>
-	<true/>
+	<false/>
 	<key>Command</key>
 	<string></string>
 	<key>Custom Color Presets</key>
@@ -695,10 +695,14 @@
 	<string>0EEB241F-8E9E-44E7-B2C4-929FAC6A0CBC</string>
 	<key>DisableFullscreenTransparency</key>
 	<false/>
+	<key>DoubleReportScrollWheel</key>
+	<false/>
 	<key>EnableDivisionView</key>
 	<true/>
 	<key>EnableProxyIcon</key>
 	<false/>
+	<key>FixMouseWheel</key>
+	<true/>
 	<key>FlashTabBarInFullscreen</key>
 	<true/>
 	<key>GlobalKeyMap</key>
@@ -1496,6 +1500,8 @@
 			</dict>
 			<key>Mouse Reporting</key>
 			<true/>
+			<key>Mouse Reporting allow mouse wheel</key>
+			<true/>
 			<key>Name</key>
 			<string>Default</string>
 			<key>Non Ascii Font</key>
@@ -1650,6 +1656,8 @@
 		</dict>
 	</dict>
 	<key>PreserveWindowSizeWhenTabBarVisibilityChanges</key>
+	<false/>
+	<key>SensitiveScrollWheel</key>
 	<false/>
 	<key>SeparateStatusBarsPerPane</key>
 	<false/>

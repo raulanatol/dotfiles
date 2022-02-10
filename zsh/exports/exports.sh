@@ -18,6 +18,7 @@ export JAVA_HOME=$(/usr/libexec/java_home) # Latest
 export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
 export JAVA_11_HOME=$(/usr/libexec/java_home -v11)
 export JAVA_14_HOME=$(/usr/libexec/java_home -v14)
+export JAVA_17_HOME=/opt/homebrew/Cellar/openjdk/17.0.1_1
 
 export HOMEBREW_AUTO_UPDATE_SECS=86400
 export HOMEBREW_NO_ANALYTICS=true

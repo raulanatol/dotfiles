@@ -41,5 +41,6 @@ utils::sync_private_folder() {
     echo "Sync private files to private folder"
     cp "$PRIVATE_FOLDER/zsh/exports/private-exports.sh" "$DOTFILES_PATH/zsh/exports/private-exports.sh"
     cp "$PRIVATE_FOLDER/zsh/aliases/private-aliases.sh" "$DOTFILES_PATH/zsh/aliases/private-aliases.sh"
+    cp "$PRIVATE_FOLDER/"
   fi
 }
