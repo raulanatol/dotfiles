@@ -1,0 +1,1 @@
+alias krovy-read-later="krovy add --type readLater"
