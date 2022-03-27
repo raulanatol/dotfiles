@@ -20,5 +20,5 @@ browser="Brave Browser"
 # @raycast.argument1 { "type": "text", "placeholder": "Profile name" }
 # @raycast.argument2 { "type": "text", "placeholder": "website", "optional": true }
 # @raycast.schemaVersion 1
-
+ 
 open -a "$browser" -n --args --profile-directory="$1" "$2"
