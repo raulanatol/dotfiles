@@ -10,7 +10,6 @@ Plugin 'gmarik/Vundle.vim'
 " start plugin defintion
 Plugin 'vim-airline/vim-airline',
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
 Plugin 'vim-scripts/L9'
