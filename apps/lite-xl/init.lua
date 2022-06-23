@@ -7,6 +7,7 @@ local keymap = require "core.keymap"
 local config = require "core.config"
 local style = require "core.style"
 
+local home_files = os.getenv("HOME") .. "/.dotfiles/apps/lite-xl"
 ------------------------------ Themes ----------------------------------------
 
 -- light theme:
@@ -14,15 +15,18 @@ local style = require "core.style"
 
 --------------------------- Key bindings -------------------------------------
 
--- key binding:
--- keymap.add { ["ctrl+escape"] = "core:quit" }
+-- Default commands: https://github.com/lite-xl/lite-xl/blob/master/data/core/keymap.lua#L240
+
+keymap.add {
+    ["ctrl+k"] = "core:find-command"
+}
 
 
 ------------------------------- Fonts ----------------------------------------
 
--- customize fonts:
--- style.font = renderer.font.load(DATADIR .. "/fonts/FiraSans-Regular.ttf", 13 * SCALE)
--- style.code_font = renderer.font.load(DATADIR .. "/fonts/JetBrainsMono-Regular.ttf", 13 * SCALE)
+style.font = renderer.font.load(home_files .. "/fonts/JetBrains/JetBrainsMono-Regular.ttf", 13 * SCALE)
+style.code_font = renderer.font.load(home_files .. "/fonts/JetBrains/JetBrainsMono-Regular.ttf", 16 * SCALE)
+
 --
 -- font names used by lite:
 -- style.font          : user interface
