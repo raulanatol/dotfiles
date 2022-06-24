@@ -2,11 +2,8 @@
 
 mkdir -p $HOME/.config
 mkdir -p $HOME/.config/alacritty
-<<<<<<< HEAD
-mkdir -p $HOME/.config/lite-xl
-=======
 mkdir -p $HOME/.config/nvim
->>>>>>> 8d80481 (Update neovim)
+mkdir -p $HOME/.config/lite-xl
 mkdir -p $HOME/.hammerspoon
 
 echo " Applying symlinks"
@@ -25,7 +22,6 @@ ln -sf "$DOTFILES_PATH"/zim/.zimrc "$HOME"/.zimrc
 ln -sf "$DOTFILES_PATH"/langs/ruby/gemrc.symlink "$HOME"/.gemrc
 ln -sf "$DOTFILES_PATH"/taskwarrior/.taskrc "$HOME"/.taskrc
 ln -sf "$DOTFILES_PATH"/apps/alacritty/alacritty.yml "$HOME"/.config/alacritty/alacritty.yml
-ln -sf "$DOTFILES_PATH"/apps/lite-xl/ "$HOME"/.config/lite-xl/
-ln -sf ~/.dotfiles/apps/lite-xl ~/.config/lite-xl
+ln -sf "$DOTFILES_PATH"/apps/lite-xl "$HOME"/.config/lite-xl
 ln -sf "$HOME/Library/Mobile\ Documents/iCloud~md~obsidian/Documents" "$HOME/Brain"
 ln -sf "$DOTFILES_PATH/iTerm/scripts/set_badge_text.py" "$HOME"/Library/Application\ Support/iTerm2/Scripts/set_badge_text.py
