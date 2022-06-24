@@ -2,6 +2,8 @@ setopt PROMPT_SUBST
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_FCNTL_LOCK
 
+DISABLE_AUTO_TITLE="true"
+
 # Start zim
 source $ZIM_HOME/init.zsh
 

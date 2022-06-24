@@ -28,6 +28,11 @@ utils::install_macos() {
 
   cp -r "$DOTFILES_PATH"/vim/colors/* "$HOME"/.vim/bundle/colors
   vim +PluginInstall +qall
+
+  # Install neovim
+  sout::info " 👵🖥️  installing neovim"
+  sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  nvim +PluginInstall +qall
 }
 
 utils::create_mac_symlinks() {

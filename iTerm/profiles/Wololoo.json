@@ -1,6 +1,4 @@
 {
-"Profiles": [
-{
   "Ansi 5 Color" : {
     "Red Component" : 0.7764706015586853,
     "Color Space" : "sRGB",
@@ -93,8 +91,8 @@
     "Alpha Component" : 1,
     "Green Component" : 0.60392159223556519
   },
-  "Icon" : 1,
-  "Use Non-ASCII Font" : false,
+  "Icon" : 0,
+  "Use Non-ASCII Font" : true,
   "Link Color" : {
     "Red Component" : 0,
     "Color Space" : "sRGB",
@@ -113,8 +111,8 @@
   },
   "Custom Window Title" : "",
   "Unlimited Scrollback" : false,
-  "Custom Command" : "Yes",
-  "Title Components" : 516,
+  "Custom Command" : "No",
+  "Title Components" : 2,
   "Keyboard Map" : {
     "0xf700-0x260000" : {
       "Text" : "[1;6A",
@@ -337,7 +335,7 @@
     "Alpha Component" : 1,
     "Green Component" : 0.42352941632270813
   },
-  "Name" : "Default",
+  "Name" : "Wololoo",
   "Blinking Cursor" : false,
   "Guid" : "0EEB241F-8E9E-44E7-B2C4-929FAC6A0CBC",
   "Idle Code" : 0,
@@ -413,7 +411,7 @@
   },
   "Screen" : -1,
   "Initial Use Transparency" : true,
-  "Non Ascii Font" : "HackNerdFontComplete-Italic 16",
+  "Non Ascii Font" : "JetBrainsMonoNerdFontCompleteM-Regular 16",
   "Ansi 13 Color" : {
     "Red Component" : 0.7764706015586853,
     "Color Space" : "sRGB",
@@ -424,9 +422,7 @@
   "Columns" : 80,
   "Unicode Normalization" : 0,
   "Visual Bell" : true,
-  "ASCII Ligatures" : false,
+  "Custom Directory" : "Recycle",
   "Thin Strokes" : 4,
-  "Custom Directory" : "Recycle"
-}
-]
+  "ASCII Ligatures" : false
 }

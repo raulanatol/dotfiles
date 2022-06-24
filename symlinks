@@ -2,12 +2,17 @@
 
 mkdir -p $HOME/.config
 mkdir -p $HOME/.config/alacritty
+<<<<<<< HEAD
 mkdir -p $HOME/.config/lite-xl
+=======
+mkdir -p $HOME/.config/nvim
+>>>>>>> 8d80481 (Update neovim)
 mkdir -p $HOME/.hammerspoon
 
 echo " Applying symlinks"
 ln -sf "$DOTFILES_PATH"/procs/.procs.toml "$HOME"/.procs.toml
 ln -sf "$DOTFILES_PATH"/vim/.vimrc "$HOME"/.vimrc
+ln -sf "$DOTFILES_PATH"/nvim/init.vim "$HOME"/.config/nvim/init.vim
 ln -sf "$DOTFILES_PATH"/git/.gitconfig "$HOME"/.gitconfig
 ln -sf "$DOTFILES_PATH"/git/.gitignore "$HOME"/.gitignore
 ln -sf "$DOTFILES_PATH"/git/.gitattributes "$HOME"/.gitattributes
