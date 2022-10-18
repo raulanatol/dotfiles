@@ -32,3 +32,10 @@ source $DOTFILES_PATH/langs/python/pyenv/init.sh
 source $DOTFILES_PATH/zsh/extra/atuin.sh
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+# bun completions
+[ -s "/Users/raulanatol/.bun/_bun" ] && source "/Users/raulanatol/.bun/_bun"
+
+# Bun
+export BUN_INSTALL="/Users/raulanatol/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

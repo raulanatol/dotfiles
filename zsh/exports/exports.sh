@@ -3,6 +3,7 @@ ANDROID_HOME="$HOME/Library/Android/sdk"
 ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"
 SONAR_SCANNER="$HOME/utils/sonar-scanner"
 PYENV_PATH="$HOME/.pyenv"
+GO_PATH="$HOME/go"
 DENO_INSTALL="$HOME/.deno"
 HOMEBREW_PREFIX="/opt/homebrew";
 HOMEBREW_CELLAR="/opt/homebrew/Cellar";
@@ -10,6 +11,7 @@ HOMEBREW_REPOSITORY="/opt/homebrew";
 MANPATH="/opt/homebrew/share/man${MANPATH+:$MANPATH}:";
 INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}";
 
+WORK="$HOME/work"
 MISC_SCRIPTS="$HOME/utils/misc"
 IDEA_SCRIPTS="$HOME/utils/idea_scripts"
 
@@ -38,6 +40,7 @@ paths=(
   "$HOME/bin"
   "$UTILSH_PATH/bin"
   "$RUST_PATH/bin"
+  "$GO_PATH/bin"
   "$DENO_INSTALL/bin"
   "$IDEA_SCRIPTS"
   "$MISC_SCRIPTS"

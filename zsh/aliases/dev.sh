@@ -1,11 +1,13 @@
 alias devs="./.scripts/devs.sh"
 alias check="make"
 alias finish-release="./.scripts/ci/finish-release"
-alias tw="npm run test -- --watch --no-watchman"
-alias twe="E2E=true npm run test -- --watch --no-watchman"
-alias te="E2E=true npm run test --no-watchman"
+alias tw="npm run test"
+alias twe="E2E=true npm run test -- --watch --no-watchman --no-cache"
+alias te="E2E=true npm run test --no-watchman --no-cache"
 alias n="fnm use"
 alias nd="fnm use default"
+
+alias c="editorconfig-checker"
 
 # Editor mate
 alias mate='/usr/local/bin/mate'
