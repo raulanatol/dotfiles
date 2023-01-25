@@ -1,6 +1,6 @@
 # Fig ssh integration. Keep at the bottom of this file.
 Match all
-    Include ~/.fig/ssh
+  Include ~/.fig/ssh
 
 # 1Password ssh integration
 Host *
