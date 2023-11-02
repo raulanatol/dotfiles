@@ -18,6 +18,7 @@ ln -sf "$DOTFILES_PATH"/starship/starship.toml "$HOME"/.config/starship.toml
 ln -sf "$DOTFILES_PATH"/hammerspoon/init.lua "$HOME"/.hammerspoon/init.lua
 ln -sf "$DOTFILES_PATH"/zsh/.zshrc "$HOME"/.zshrc
 ln -sf "$DOTFILES_PATH"/zsh/.zshenv "$HOME"/.zshenv
+ln -sf "$DOTFILES_PATH"/zsh/.zprofile "$HOME"/.zprofile
 ln -sf "$DOTFILES_PATH"/zim/.zlogin "$HOME"/.zlogin
 ln -sf "$DOTFILES_PATH"/zim/.zimrc "$HOME"/.zimrc
 ln -sf "$DOTFILES_PATH"/langs/ruby/gemrc.symlink "$HOME"/.gemrc
