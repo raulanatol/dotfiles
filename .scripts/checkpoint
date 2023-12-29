@@ -11,9 +11,9 @@ echo 'Brew apps exported!'
 # ------------
 # Python save
 # ------------
-rm -f "$DOTFILES_PATH/langs/python/requirements.txt"
-pip freeze >"$DOTFILES_PATH/langs/python/requirements.txt"
-echo 'Python apps exported!'
+#rm -f "$DOTFILES_PATH/langs/python/requirements.txt"
+#pip freeze >"$DOTFILES_PATH/langs/python/requirements.txt"
+#echo 'Python apps exported!'
 
 # ---------------
 # Private folder
