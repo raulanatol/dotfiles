@@ -27,8 +27,9 @@
 
 [user]
 	email = raul@natol.es
-	name = raulanatol
-	signingkey = 7118F1EA5D3002E1
+  name = raulanatol
+  signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFTRxj0RMnUpIkHpMdF9MI4GbXpkPQNepuM32XHG9Exl
+  # signingkey = 74D571C4B1E19692
 
 [core]
 	editor = vim
@@ -75,4 +76,8 @@
 	defaultBranch = main
 
 [gpg]
-	program = gpg
+  format = ssh
+  program = gpg
+
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
