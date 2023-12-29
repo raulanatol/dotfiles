@@ -29,7 +29,6 @@
 	email = raul@natol.es
 	name = raulanatol
 	signingkey = ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIFTRxj0RMnUpIkHpMdF9MI4GbXpkPQNepuM32XHG9Exl
-	# signingkey = 7118F1EA5D3002E1
 
 [core]
 	editor = vim
