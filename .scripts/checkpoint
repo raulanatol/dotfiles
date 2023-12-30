@@ -11,14 +11,15 @@ echo 'Brew apps exported!'
 # ------------
 # Python save
 # ------------
-#rm -f "$DOTFILES_PATH/langs/python/requirements.txt"
-#pip freeze >"$DOTFILES_PATH/langs/python/requirements.txt"
-#echo 'Python apps exported!'
+rm -f "$DOTFILES_PATH/langs/python/requirements.txt"
+pip freeze >"$DOTFILES_PATH/langs/python/requirements.txt"
+echo 'Python apps exported!'
 
 # ---------------
 # Private folder
 # ---------------
-if [ -d "$PRIVATE_FOLDER" ]; then
+
+if [[ -n "${PRIVATE_FOLDER:+x}" ]] && [[ -d "$PRIVATE_FOLDER" ]]; then
   echo "Sync private files to private folder"
   mkdir -p "$PRIVATE_FOLDER/zsh/exports"
   mkdir -p "$PRIVATE_FOLDER/zsh/aliases"
