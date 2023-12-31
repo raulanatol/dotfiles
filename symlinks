@@ -4,6 +4,7 @@ mkdir -p $HOME/.config
 mkdir -p $HOME/.config/alacritty
 mkdir -p $HOME/.config/nvim
 mkdir -p $HOME/.config/lite-xl
+mkdir -p $HOME/.config/yabai
 mkdir -p $HOME/.hammerspoon
 
 echo " Applying symlinks"
@@ -25,8 +26,8 @@ ln -sf "$DOTFILES_PATH"/langs/ruby/gemrc.symlink "$HOME"/.gemrc
 ln -sf "$DOTFILES_PATH"/taskwarrior/.taskrc "$HOME"/.taskrc
 ln -sf "$DOTFILES_PATH"/apps/alacritty/alacritty.yml "$HOME"/.config/alacritty/alacritty.yml
 ln -sf "$DOTFILES_PATH"/apps/lite-xl "$HOME"/.config/lite-xl
-ln -sf "$DOTFILES_PATH"/apps/yabai/.yabairc "$HOME"/.yabairc
-ln -sf "$DOTFILES_PATH"/apps/skhd/.skhdrc "$HOME"/.skhdrc
+ln -sf "$DOTFILES_PATH"/apps/yabai "$HOME"/.config/yabai
+ln -sf "$DOTFILES_PATH"/apps/skhd "$HOME"/.config/skhd
 ln -sf "$HOME/Library/Mobile\ Documents/iCloud~md~obsidian/Documents" "$HOME/Brain"
 ln -sf "$DOTFILES_PATH/iTerm/scripts/set_badge_text.py" "$HOME"/Library/Application\ Support/iTerm2/Scripts/set_badge_text.py
 ln -sf "$DOTFILES_PATH"/pulsar "$HOME"/.pulsar
