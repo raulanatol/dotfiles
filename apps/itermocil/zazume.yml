@@ -1,0 +1,10 @@
+windows:
+  - name: backend
+    commands:
+      - cd ~/work/zazume/zzm-backend
+  - name: workers
+    commands:
+      - cd ~/work/zazume/zzm-backend
+  - name: front
+    commands:
+      - cd ~/work/zazume/zzm-front

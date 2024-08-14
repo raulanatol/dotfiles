@@ -1,3 +1,5 @@
+# Q pre block. Keep at the top of this file.
+[[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.pre.zsh"
 setopt PROMPT_SUBST
 setopt HIST_IGNORE_ALL_DUPS
 setopt HIST_FCNTL_LOCK
@@ -39,3 +41,6 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 # Bun
 export BUN_INSTALL="/Users/raulanatol/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+# Q post block. Keep at the bottom of this file.
+[[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"

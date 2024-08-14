@@ -1,5 +1,5 @@
-alias ll="exa -la"
-alias la="exa -la"
-alias ls="exa"
+alias ll="eza -la"
+alias la="eza -la"
+alias ls="eza"
 alias cpwd="pwd | pbcopy"
 alias t="cd /tmp"
