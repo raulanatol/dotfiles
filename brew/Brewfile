@@ -71,6 +71,7 @@ brew "diskonaut"
 brew "dust"
 brew "folly"
 brew "fizz"
+brew "mvfst"
 brew "wangle"
 brew "fbthrift"
 brew "fb303"
@@ -191,7 +192,7 @@ brew "cjbassi/ytop/ytop"
 brew "heroku/brew/heroku"
 brew "jetbrains/utils/qodana"
 brew "koekeishiya/formulae/skhd"
-brew "localazy/tools/localazy", link: false
+brew "localazy/tools/localazy"
 brew "mongodb/brew/mongodb-community"
 brew "mykolaharmash/git-jump/git-jump"
 brew "rasukarusan/tap/fzf-chrome-active-tab"
@@ -235,6 +236,7 @@ cask "inkscape"
 cask "insomnia"
 cask "iterm2"
 cask "jetbrains-toolbox"
+cask "kitty"
 cask "little-snitch"
 cask "microsoft-auto-update"
 cask "microsoft-excel"
@@ -255,6 +257,7 @@ cask "proxyman"
 cask "responsively"
 cask "robo-3t"
 cask "shifty"
+cask "shortcat"
 cask "skype"
 cask "slack"
 cask "spotify"
@@ -281,6 +284,7 @@ mas "GIPHY CAPTURE", id: 668208984
 mas "Goodnotes", id: 1444383602
 mas "Grammarly for Safari", id: 1462114288
 mas "Hand Mirror", id: 1502839586
+mas "Home Assistant", id: 1099568401
 mas "iMovie", id: 408981434
 mas "IP Scanner", id: 404167149
 mas "Irvue", id: 1039633667
