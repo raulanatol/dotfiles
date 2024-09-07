@@ -1,0 +1,62 @@
+import = []
+
+[shell]
+program = "/bin/zsh"
+args = ['-l']
+
+[window]
+startup_mode = "Windowed"
+#title = "Alacritty"
+dynamic_title = false
+decorations_theme_variant = "None"
+decorations = "Full"
+opacity = 0.9
+blur = true
+
+[scrolling]
+history = 10000
+multiplier = 3
+
+[font]
+size = 16.0
+
+[font.bold]
+family = "JetBrainsMono Nerd Font"
+style = "Heavy"
+
+[font.bold_italic]
+family = "JetBrainsMono Nerd Font"
+style = "Heavy Italic"
+
+[font.italic]
+family = "JetBrainsMono Nerd Font"
+style = "Medium Italic"
+
+[font.normal]
+family = "JetBrainsMono Nerd Font"
+style = "Medium"
+
+[colors.normal]
+black = "#282b33"
+red = "#d17277"
+green = "#a0c180"
+yellow = "#c89c6d"
+blue = "#6fb3bf"
+magenta = "#bb7bd7"
+cyan = "#6fb3bf"
+white = "#d0d0d0"
+
+[colors.bright]
+black = "#808080"
+red = "#d17277"
+green = "#a0c180"
+yellow = "#c89c6d"
+blue = "#6fb3bf"
+magenta = "#bb7bd7"
+cyan = "#6fb3bf"
+white = "#feffff"
+
+[keyboard]
+bindings = [
+    { key = "ArrowRight", mods = "Command", action = "SelectNextWindow" }
+]

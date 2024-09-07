@@ -25,7 +25,7 @@ ln -sf "$DOTFILES_PATH"/zim/.zlogin "$HOME"/.zlogin
 ln -sf "$DOTFILES_PATH"/zim/.zimrc "$HOME"/.zimrc
 ln -sf "$DOTFILES_PATH"/langs/ruby/gemrc.symlink "$HOME"/.gemrc
 ln -sf "$DOTFILES_PATH"/taskwarrior/.taskrc "$HOME"/.taskrc
-ln -sf "$DOTFILES_PATH"/apps/alacritty/alacritty.yml "$HOME"/.config/alacritty/alacritty.yml
+ln -sf "$DOTFILES_PATH"/apps/alacritty/alacritty.toml "$HOME"/.config/alacritty/alacritty.toml
 ln -sf "$DOTFILES_PATH"/apps/lite-xl "$HOME"/.config/lite-xl
 ln -sf "$DOTFILES_PATH"/apps/skhd "$HOME"/.config/skhd
 ln -sf "$DOTFILES_PATH"/apps/phoenix "$HOME"/.config/phoenix

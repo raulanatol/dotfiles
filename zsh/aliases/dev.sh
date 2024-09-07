@@ -14,6 +14,7 @@ alias mate='/usr/local/bin/mate'
 
 alias mongod-status='brew services list'
 alias mongod-stop='brew services stop mongodb-community'
+alias mongo="mongosh"
 
 # Java
 alias java8='export JAVA_HOME=$JAVA_8_HOME'

@@ -35,6 +35,7 @@ export WORKON_HOME="$HOME/.virtualenvs"
 export VIRTUAL_ENV_DISABLE_PROMPT=1
 
 export ZZM_HOME="$HOME/.zzm"
+export ZAZUME_NODE_PATH="$HOME/.fnm/node-versions/v18.16.0/installation/bin"
 
 paths=(
   "$HOME/bin"
@@ -49,6 +50,7 @@ paths=(
   "$ANDROID_HOME/tools"
   "$ANDROID_HOME/tools/bin"
   "$ANDROID_HOME/platform-tools"
+  "$ZAZUME_NODE_PATH"
   "/opt/homebrew/bin"
   "/opt/homebrew/sbin"
   "$PYENV_PATH/bin"
