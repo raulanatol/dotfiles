@@ -31,6 +31,7 @@ ln -sf "$DOTFILES_PATH"/apps/skhd "$HOME"/.config/skhd
 ln -sf "$DOTFILES_PATH"/apps/phoenix "$HOME"/.config/phoenix
 ln -sf "$DOTFILES_PATH"/apps/itermocil "$HOME"/.itermocil
 ln -sf "$DOTFILES_PATH"/apps/kitty "$HOME"/.config/kitty
+ln -sf "$DOTFILES_PATH"/apps/wezterm "$HOME"/.config/wezterm
 ln -sf "$HOME/Library/Mobile\ Documents/iCloud~md~obsidian/Documents" "$HOME/Brain"
 ln -sf "$DOTFILES_PATH/iTerm/scripts/set_badge_text.py" "$HOME"/Library/Application\ Support/iTerm2/Scripts/set_badge_text.py
 ln -sf "$DOTFILES_PATH"/pulsar "$HOME"/.pulsar
