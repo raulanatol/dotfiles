@@ -202,7 +202,6 @@ cask "brave-browser"
 cask "bruno"
 cask "cleanshot"
 cask "contexts"
-cask "core-tunnel"
 cask "cyberduck"
 cask "daisydisk"
 cask "deepl"
@@ -274,11 +273,9 @@ mas "GarageBand", id: 682658836
 mas "GIPHY CAPTURE", id: 668208984
 mas "Goodnotes", id: 1444383602
 mas "Grammarly for Safari", id: 1462114288
-mas "Hand Mirror", id: 1502839586
 mas "Home Assistant", id: 1099568401
 mas "iMovie", id: 408981434
 mas "IP Scanner", id: 404167149
-mas "iPhoto", id: 408981381
 mas "Irvue", id: 1039633667
 mas "Jira", id: 1475897096
 mas "Keynote", id: 409183694
@@ -294,20 +291,15 @@ mas "One Thing", id: 1604176982
 mas "Pages", id: 409201541
 mas "PasteBox", id: 928940999
 mas "Pastel", id: 413897608
-mas "rcmd", id: 1596283165
 mas "RunCat", id: 1429033973
-mas "Session", id: 1521432881
 mas "Slack", id: 803453959
 mas "Spark", id: 1176895641
-mas "Speediness", id: 1596706466
 mas "Telegram", id: 747648890
 mas "The Unarchiver", id: 425424353
 mas "Toggl Track", id: 1291898086
-mas "Toggl Track", id: 957734279
 mas "Tot", id: 1491071483
 mas "Unclutter", id: 577085396
 mas "Velja", id: 1607635845
 mas "WiFi Explorer", id: 494803304
 mas "Xcode", id: 497799835
 mas "Yubico Authenticator", id: 1497506650
-mas "ZoomMe", id: 1437487517
