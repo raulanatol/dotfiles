@@ -7,6 +7,7 @@ mkdir -p $HOME/.config/lite-xl
 mkdir -p $HOME/.config/phoenix
 mkdir -p $HOME/.hammerspoon
 mkdir -p $HOME/.itermocil
+mkdir -p $HOME/.config/ghostty
 
 echo " Applying symlinks"
 ln -sf "$DOTFILES_PATH"/procs/.procs.toml "$HOME"/.procs.toml
@@ -37,3 +38,6 @@ ln -sf "$DOTFILES_PATH/iTerm/scripts/set_badge_text.py" "$HOME"/Library/Applicat
 ln -sf "$DOTFILES_PATH"/pulsar "$HOME"/.pulsar
 ln -sf "$DOTFILES_PATH"/apps/fleet "$HOME"/.fleet
 ln -sf "$DOTFILES_PATH"/apps/mongosh/mongoshrc.js "$HOME"/.mongoshrc.js
+ln -sf "$DOTFILES_PATH"/apps/sketchybar "$HOME"/.config/sketchybar
+ln -sf "$DOTFILES_PATH"/apps/aerospace "$HOME"/.config/aerospace
+ln -sf "$DOTFILES_PATH"/apps/ghostty "$HOME"/.config/ghostty

@@ -15,13 +15,13 @@ end)
 
 -- Slack
 
-hs.hotkey.bind({ "cmd", "alt", "ctrl", "shift" }, "6", function()
-    hs.execute("dot slack status Lunch :ramen:", true)
-end)
+-- hs.hotkey.bind({ "cmd", "alt", "ctrl", "shift" }, "comma", function()
+--    hs.execute("dot slack status Lunch :ramen:", true)
+--end)
 
-hs.hotkey.bind({ "cmd", "alt", "ctrl", "shift" }, "7", function()
-    hs.execute("dot slack status", true)
-end)
+--hs.hotkey.bind({ "cmd", "alt", "ctrl", "shift" }, "", function()
+--    hs.execute("dot slack status", true)
+--end)
 
 -- hs.hotkey.bind({ "cmd", "alt", "ctrl", "shift" }, "8", function()
 --    hs.execute("dot slack status Focus :safety_vest:", true)
