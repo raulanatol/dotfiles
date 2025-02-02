@@ -1,9 +1,19 @@
 # raulanatol dotfiles
 
 
-## Install using nix
+## Dependencies
+
+- Stow
+- nix-darwin
+
+## Start
 
 ```sh
-nix run nix-darwin -- switch --flake ~/.dotfiles/nix#mini
+# Move the dotfiles
+stow .
+
+# Install nix flakes
+nix run nix-darwin -- switch --flake ~/nix#mini
 ```
+
 

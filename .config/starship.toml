@@ -1,0 +1,63 @@
+add_newline = false
+format = """\
+    $hostname\
+    $python\
+    $nodejs\
+    $rust\
+    $directory\
+    $git_branch\
+    $git_status\
+    $cmd_duration\
+    $line_break\
+    $character\
+    """
+command_timeout = 10000
+
+[character]
+success_symbol = "[➜](bold green)"
+error_symbol = "[✖](bold red)"
+
+[package]
+prefix = ""
+
+[aws]
+disabled = true
+
+[git_branch]
+format = "[$symbol$branch]($style) "
+symbol = "🐙 "
+
+[git_status]
+conflicted = "🏳"
+ahead = "🚗💨"
+behind = "😰"
+diverged = "😵"
+untracked = "🤷‍"
+stashed = "📦"
+modified = "📝"
+staged = ' [++$count](green)'
+renamed = ""
+deleted = "🗑"
+format = '$all_status$ahead_behind $style'
+
+[directory]
+truncation_length = 8
+truncate_to_repo = false
+use_logical_path = true
+
+[hostname]
+format = "[$hostname]($style) "
+ssh_only = false
+style = "yellow"
+
+[python]
+format = '[${symbol}${pyenv_prefix}${version}( \($virtualenv\))]($style) '
+symbol = "🐍 "
+
+[nodejs]
+format = "[$symbol($version )]($style)"
+
+[username]
+style_root = "bold green"
+show_always = true
+#prefix = "as

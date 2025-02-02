@@ -21,6 +21,7 @@
 	  pkgs.vim
           pkgs.obsidian
           pkgs.stow
+          pkgs.starship
         ];
 
       homebrew = {
