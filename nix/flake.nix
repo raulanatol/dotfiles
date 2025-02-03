@@ -22,6 +22,10 @@
           pkgs.obsidian
           pkgs.stow
           pkgs.starship
+          pkgs.fzf
+          pkgs.zoxide
+          pkgs.eza
+          pkgs.bat
         ];
 
       homebrew = {

@@ -1,0 +1,16 @@
+alias git-actions="dot github actions"
+alias open-actions="dot github actions"
+alias gd="git diff"
+alias gpr='git push -u origin "$(git rev-parse --abbrev-ref HEAD)"'
+alias gci='gbi'
+alias gc="dot git commit"
+alias gcm='git checkout main || git checkout master'
+alias gcd='git checkout develop'
+alias gs="git status -sb"
+alias gb="git branch -v"
+alias gba="git branch -av"
+alias ga="git add -A"
+alias gfix="dot git fix"
+alias gup="ga && gc 'Test' && git push"
+alias g2m="gcm && git pull && dot git delete-merged"
+alias gj="dot git jump"

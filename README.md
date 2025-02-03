@@ -13,7 +13,7 @@
 stow .
 
 # Install nix flakes
-nix run nix-darwin -- switch --flake ~/nix#mini
+nix run nix-darwin -- switch --flake ~/.dotfiles/nix#mini
 ```
 
 
