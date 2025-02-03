@@ -32,14 +32,14 @@
 
 [core]
 	editor = vim
-	excludesfile = ~/.gitignore
+	excludesfile = ~/.gitignore_global
 	pager = delta
 
 [commit]
 	gpgsign = true
 
 [tag]
-  gpgSign = true
+	gpgSign = true
 
 [filter "lfs"]
 	clean = git-lfs clean -- %f
@@ -79,4 +79,4 @@
     program = gpg
 
 [gpg "ssh"]
-  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+	program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"

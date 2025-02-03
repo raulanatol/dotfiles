@@ -8,3 +8,13 @@ gbi() {
 gch() {
   git checkout "$(git branch -a | fzf | tr -d '[:space:]')"
 }
+
+# Git commit
+git_commit() {
+  git add -A
+  if [ -z "$1" ]; then
+    git commit -S
+  else
+    git commit -S -m"$*"
+  fi
+}

@@ -10,7 +10,7 @@
 
   outputs = inputs@{ self, nix-darwin, nixpkgs, nix-homebrew }:
   let
-    configuration = { pkgs, config, ... }: {
+    configuration = { pkgs,  config, ... }: {
       
       nixpkgs.config.allowUnfree = true;
       
@@ -27,6 +27,7 @@
           pkgs.eza
           pkgs.bat
           pkgs.telegram-desktop
+          pkgs.gnupg
         ];
 
       homebrew = {
@@ -36,6 +37,8 @@
         ];
         casks = [
           "brave-browser"
+          "1password"
+          "1password-cli"
         ];
         #masApps = {
         #  "Yoink" = 457622435;
@@ -65,7 +68,6 @@
 
       # Enable alternative shell support in nix-darwin.
       # programs.fish.enable = true;
-
       # Set Git commit hash for darwin-version.
       system.configurationRevision = self.rev or self.dirtyRev or null;
 
