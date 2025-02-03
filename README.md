@@ -5,6 +5,7 @@
 
 - Stow
 - nix-darwin
+- softwareupdate --install-rosetta
 
 ## Start
 

@@ -28,6 +28,16 @@
           pkgs.bat
           pkgs.telegram-desktop
           pkgs.gnupg
+          pkgs.delta
+          pkgs.git-open
+          pkgs.gh
+          pkgs.jq
+          pkgs.mongosh
+          pkgs.wget
+          pkgs.bruno
+          pkgs.bruno-cli
+          pkgs.cyberduck
+          pkgs.discord
         ];
 
       homebrew = {
@@ -39,10 +49,32 @@
           "brave-browser"
           "1password"
           "1password-cli"
+          "cleanshot"
+          "firefox"
+          "jetbrains-toolbox"
+          "figma"
+          "google-chrome"
+          "google-chrome@canary"
+          "little-snitch"
+          "microsoft-excel"
+          "microsoft-word"
+          "miro"
+          "ngrok"
+          "obs"
+          "odrive"
+          "proxyman"
+          "raycast"
+          "spotify"
+          "whatsapp"
+          "shifty"
         ];
-        #masApps = {
+        masApps = {
         #  "Yoink" = 457622435;
-        #};
+          "Bitwarden" = 1352778147;
+          "Slack" = 803453959;
+          "Spark" = 1176895641;
+	  "One Thing" = 1604176982;
+        };
         onActivation.cleanup = "zap";
         onActivation.autoUpdate = true;
         onActivation.upgrade = true;
