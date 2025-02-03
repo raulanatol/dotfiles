@@ -43,6 +43,7 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 # Shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init zsh)"
+eval "$(zellij setup --generate-auto-start zsh)"
 
 # Custom shell scripts
 source ~/.config/zsh/init.sh
