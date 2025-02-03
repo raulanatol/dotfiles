@@ -26,6 +26,7 @@
           pkgs.zoxide
           pkgs.eza
           pkgs.bat
+          pkgs.telegram-desktop
         ];
 
       homebrew = {
