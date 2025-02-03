@@ -72,7 +72,7 @@ keybinds clear-defaults=true {
 
     shared_except "locked" {
 	    bind "Ctrl j" {
-		    LaunchOrFocusPlugin "file:~/config/zellij/plugins/rrom.wasm" {
+		    LaunchOrFocusPlugin "file:~/.config/zellij/plugins/room.wasm" {
 			    floating true
 			    ignore_case true
 			    quick_jump true

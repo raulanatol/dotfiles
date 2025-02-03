@@ -22,6 +22,7 @@
             pkgs.delta
             pkgs.discord
             pkgs.eza
+            pkgs.fnm
             pkgs.fzf
             pkgs.gh
             pkgs.git-open
@@ -46,8 +47,8 @@
             casks = [
                 "1password"
                 "1password-cli"
-                "bartender"
-                "betterdisplay"
+#                "bartender"
+#                "betterdisplay"
                 "brave-browser"
                 "cleanmymac"
                 "cleanshot"
@@ -59,7 +60,7 @@
                 "google-chrome@canary"
                 "jetbrains-toolbox"
                 "little-snitch"
-                "loopback"
+#                "loopback"
                 "microsoft-excel"
                 "microsoft-word"
                 "miro"
@@ -70,7 +71,7 @@
                 "proxyman"
                 "shifty"
                 "slack"
-                "soundsource"
+#                "soundsource"
                 "spotify"
                 "whatsapp"
 #                "raycast"
