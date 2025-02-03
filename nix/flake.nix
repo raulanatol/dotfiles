@@ -38,6 +38,7 @@
           pkgs.bruno-cli
           pkgs.cyberduck
           pkgs.discord
+          pkgs.zellij
         ];
 
       homebrew = {
@@ -67,11 +68,11 @@
           "spotify"
           "whatsapp"
           "shifty"
+          "slack"
+          "orbstack"
         ];
         masApps = {
-        #  "Yoink" = 457622435;
           "Bitwarden" = 1352778147;
-          "Slack" = 803453959;
           "Spark" = 1176895641;
 	  "One Thing" = 1604176982;
         };
