@@ -16,6 +16,12 @@ keybinds clear-defaults=true {
             SwitchToMode "RenameTab";
             TabNameInput 0;
         }
+        bind "Super k" {
+            SwitchToMode "Tab";
+        }
+        bind "Super 1" {
+            GoToTab 1;
+        }
     }
 
     tab {
