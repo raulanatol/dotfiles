@@ -47,8 +47,8 @@
             casks = [
                 "1password"
                 "1password-cli"
-#                "bartender"
-#                "betterdisplay"
+                "bartender"
+                "betterdisplay"
                 "brave-browser"
                 "cleanmymac"
                 "cleanshot"
@@ -60,7 +60,7 @@
                 "google-chrome@canary"
                 "jetbrains-toolbox"
                 "little-snitch"
-		"localazy"
+		        "localazy"
 #                "loopback"
                 "microsoft-excel"
                 "microsoft-word"
@@ -75,7 +75,7 @@
 #                "soundsource"
                 "spotify"
                 "whatsapp"
-#                "raycast"
+                "raycast"
             ];
             masApps = {
 	            "One Thing" = 1604176982;

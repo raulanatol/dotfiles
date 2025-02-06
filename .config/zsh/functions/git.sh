@@ -18,3 +18,8 @@ git_commit() {
     git commit -S -m"$*"
   fi
 }
+
+git_delete_merged() {
+  git branch --merged | egrep -v "(^\*|master|develop|main)" | xargs git branch -d
+  sout::info "🧹 cleanup done!"
+}
