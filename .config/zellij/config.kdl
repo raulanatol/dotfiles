@@ -9,6 +9,13 @@ keybinds clear-defaults=true {
         bind "Ctrl t" {
             SwitchToMode "Tab";
         }
+	bind "Super t" {
+	    NewTab;
+        }
+	bind "Super r" {
+	    SwitchToMode "RenameTab";
+	    TabNameInput 0;
+	}
     }
 
     tab {
@@ -78,6 +85,51 @@ keybinds clear-defaults=true {
 			    quick_jump true
 		    }
 	    }
+	    bind "Super c" {
+	        Copy;
+        }
+        bind "Super w" {
+            CloseTab;
+        }
+        bind "Super Left" {
+            GoToNextTab;
+        }
+        bind "Super Right" {
+            GoToPreviousTab;
+        }
+	    bind "Super 1" {
+            GoToTab 1;
+        }
+        bind "Super 2" {
+            GoToTab 2;
+        }
+        bind "Super 3" {
+            GoToTab 3;
+            SwitchToMode "Normal"; }
+        bind "Super 4" {
+            GoToTab 4;
+            SwitchToMode "Normal";
+        }
+        bind "Super 5" {
+            GoToTab 5;
+            SwitchToMode "Normal";
+        }
+        bind "Super 6" {
+            GoToTab 6;
+            SwitchToMode "Normal";
+        }
+        bind "Super 7" {
+            GoToTab 7;
+            SwitchToMode "Normal";
+        }
+        bind "Super 8" {
+            GoToTab 8;
+            SwitchToMode "Normal";
+        }
+        bind "Super 9" {
+            GoToTab 9;
+            SwitchToMode "Normal";
+        }
     }
 }
 
@@ -121,4 +173,7 @@ theme "catppuccin-mocha"
 layout_dir "/Users/raulanatol/.config/zellij/layouts"
 
 // The folder in which Zellij will look for themes
-theme_dir "/Users/raulanatol/.config/zellij/themes"
+// theme_dir "/Users/raulanatol/.config/zellij/themes"
+
+copy_command "pbcopy"
+copy_on_select false

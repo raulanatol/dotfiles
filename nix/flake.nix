@@ -74,7 +74,7 @@
 #                "soundsource"
                 "spotify"
                 "whatsapp"
-#                "raycast"
+                "raycast"
             ];
             masApps = {
 	            "One Thing" = 1604176982;
