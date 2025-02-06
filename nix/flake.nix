@@ -60,6 +60,7 @@
                 "google-chrome@canary"
                 "jetbrains-toolbox"
                 "little-snitch"
+		"localazy"
 #                "loopback"
                 "microsoft-excel"
                 "microsoft-word"
@@ -132,7 +133,6 @@
                         enableRosetta = true;
                         user = "raulanatol";
                         autoMigrate = true;
-
                     };
                 }
             ];
