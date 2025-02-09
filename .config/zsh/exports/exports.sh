@@ -28,36 +28,39 @@ export HOMEBREW_NO_ANALYTICS=true
 export EDITOR='vim'
 
 #export ZAZUME_NODE_PATH="$HOME/.fnm/node-versions/v18.16.0/installation/bin"
-
 paths=(
-  "$HOME/bin"
+  "$PATH"
   "$UTILSH_PATH/bin"
-  "$RUST_PATH/bin"
-  "$GO_PATH/bin"
-  "$DENO_INSTALL/bin"
   "$IDEA_SCRIPTS"
   "$MISC_SCRIPTS"
-  "$SONAR_SCANNER/bin"
-  "$ANDROID_HOME/emulator"
-  "$ANDROID_HOME/tools"
-  "$ANDROID_HOME/tools/bin"
-  "$ANDROID_HOME/platform-tools"
-  "$ZAZUME_NODE_PATH"
-  "$PYENV_PATH/bin"
-  "$PYENV_PATH/shims"
-  "/bin"
-  "/usr/local/bin"
-  "/usr/local/opt/gnu-sed/libexec/gnubin"
-  "/usr/local/opt/make/libexec/gnubin"
-  "/usr/bin"
-  "/usr/local/sbin"
-  "/usr/sbin"
-  "/sbin"
 )
-
-#PATH=$(
-#  IFS=":"
-#  echo "${paths[*]}"
+#
+#paths=(
+#  "$HOME/bin"
+#  "$RUST_PATH/bin"
+#  "$GO_PATH/bin"
+#  "$DENO_INSTALL/bin"
+#  "$SONAR_SCANNER/bin"
+#  "$ANDROID_HOME/emulator"
+#  "$ANDROID_HOME/tools"
+#  "$ANDROID_HOME/tools/bin"
+#  "$ANDROID_HOME/platform-tools"
+#  "$ZAZUME_NODE_PATH"
+#  "$PYENV_PATH/bin"
+#  "$PYENV_PATH/shims"
+#  "/bin"
+#  "/usr/local/bin"
+#  "/usr/local/opt/gnu-sed/libexec/gnubin"
+#  "/usr/local/opt/make/libexec/gnubin"
+#  "/usr/bin"
+#  "/usr/local/sbin"
+#  "/usr/sbin"
+#  "/sbin"
 #)
 
-# export PATH
+PATH=$(
+  IFS=":"
+  echo "${paths[*]}"
+)
+
+export PATH

@@ -3,6 +3,7 @@ format = """\
     $python\
     $nodejs\
     $rust\
+    $directory\
     $git_branch\
     $git_status\
     $character\
