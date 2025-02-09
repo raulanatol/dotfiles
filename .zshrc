@@ -1,5 +1,6 @@
 # Zinit install
 ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
+
 # Download Zinit, if it's not there yet
 if [ ! -d "$ZINIT_HOME" ]; then
   mkdir -p "$(dirname $ZINIT_HOME)"
@@ -14,6 +15,7 @@ zinit light zsh-users/zsh-syntax-highlighting
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
+
 # Load completions
 autoload -U compinit && compinit -u
 
@@ -43,7 +45,6 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 # Shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init zsh)"
-eval "$(zellij setup --generate-auto-start zsh)"
 
 # Custom shell scripts
 source ~/.config/zsh/init.sh

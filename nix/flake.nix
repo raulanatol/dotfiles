@@ -35,7 +35,6 @@
             pkgs.telegram-desktop
             pkgs.vim
             pkgs.wget
-            pkgs.zellij
             pkgs.zoxide
         ];
 

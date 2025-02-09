@@ -18,3 +18,8 @@ nix run nix-darwin -- switch --flake ~/.dotfiles/nix#mini
 ```
 
 
+
+## More info 
+
+- https://github.com/adriankarlen/bar.wezterm
+- 

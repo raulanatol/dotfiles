@@ -27,7 +27,7 @@ export HOMEBREW_NO_ANALYTICS=true
 
 export EDITOR='vim'
 
-export ZAZUME_NODE_PATH="$HOME/.fnm/node-versions/v18.16.0/installation/bin"
+#export ZAZUME_NODE_PATH="$HOME/.fnm/node-versions/v18.16.0/installation/bin"
 
 paths=(
   "$HOME/bin"

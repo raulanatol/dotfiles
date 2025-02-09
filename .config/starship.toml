@@ -1,19 +1,20 @@
 add_newline = false
 format = """\
-    $hostname\
     $python\
     $nodejs\
     $rust\
-    $directory\
     $git_branch\
     $git_status\
-    $cmd_duration\
-    $line_break\
     $character\
+    """
+right_format = """\
+    $time\
+    $cmd_duration\
     """
 command_timeout = 10000
 
 [character]
+format = "$symbol "
 success_symbol = "[➜](bold green)"
 error_symbol = "[✖](bold red)"
 
@@ -61,3 +62,11 @@ format = "[$symbol($version )]($style)"
 style_root = "bold green"
 show_always = true
 #prefix = "as
+
+[time]
+disabled = false
+format = '[$time]($style)'
+
+[cmd_duration]
+min_time = 500
+format = ' ⏳[$duration](bold yellow)'

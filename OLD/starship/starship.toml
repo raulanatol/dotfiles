@@ -10,6 +10,7 @@ format = """\
     $cmd_duration\
     $line_break\
     $character\
+    $time\
     """
 command_timeout = 10000
 
