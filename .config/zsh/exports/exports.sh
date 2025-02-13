@@ -14,6 +14,7 @@ INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}";
 WORK="$HOME/work"
 MISC_SCRIPTS="$HOME/utils/misc"
 IDEA_SCRIPTS="$HOME/utils/idea_scripts"
+CERT_PATH="$HOME/utils/cert_path"
 
 # Java
 #export JAVA_HOME=$(/usr/libexec/java_home) # Latest
