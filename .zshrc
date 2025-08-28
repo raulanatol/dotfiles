@@ -10,9 +10,6 @@ ZSH_HIGHLIGHT_MAXLENGTH=300
 # Init custom shell scripts
 source $DOTFILES_PATH/zsh/init.sh
 
-# Load completions
-autoload -U compinit && compinit -u
-
 # bindings...
 source $DOTFILES_PATH/zsh/bindings/key-bindings.zsh
 source $DOTFILES_PATH/zsh/bindings/reverse_search.zsh
@@ -58,9 +55,6 @@ zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 # Shell integrations
 eval "$(fzf --zsh)"
 eval "$(zoxide init zsh)"
-
-# Custom shell scripts
-source ~/.config/zsh/init.sh
 
 ## Starship
 eval "$(starship init zsh)"
