@@ -6,7 +6,6 @@ mkdir -p $HOME/.config/nvim
 echo " Applying symlinks using stow"
 
 #ln -sf "$DOTFILES_PATH"/vim/.vimrc "$HOME"/.vimrc
-#ln -sf "$DOTFILES_PATH"/apps/nvim/init.vim "$HOME"/.config/nvim/init.vim
 #ln -sf "$DOTFILES_PATH"/git/.gitconfig "$HOME"/.gitconfig
 #ln -sf "$DOTFILES_PATH"/git/.gitignore "$HOME"/.gitignore
 #ln -sf "$DOTFILES_PATH"/git/.gitattributes "$HOME"/.gitattributes
@@ -18,7 +17,6 @@ echo " Applying symlinks using stow"
 #ln -sf "$DOTFILES_PATH"/zim/.zlogin "$HOME"/.zlogin
 #ln -sf "$DOTFILES_PATH"/zim/.zimrc "$HOME"/.zimrc
 #ln -sf "$DOTFILES_PATH"/langs/ruby/gemrc.symlink "$HOME"/.gemrc
-#ln -sf "$DOTFILES_PATH"/apps/wezterm "$HOME"/.config/wezterm
 #ln -sf "$HOME/Library/Mobile\ Documents/iCloud~md~obsidian/Documents" "$HOME/Brain"
 #ln -sf "$DOTFILES_PATH/iTerm/scripts/set_badge_text.py" "$HOME"/Library/Application\ Support/iTerm2/Scripts/set_badge_text.py
 #ln -sf "$DOTFILES_PATH"/apps/mongosh/mongoshrc.js "$HOME"/.mongoshrc.js
