@@ -24,6 +24,9 @@ eval "$(starship init zsh)"
 ## Init extra scripts
 source $DOTFILES_PATH/langs/python/pyenv/init.sh
 
+# Zoxide
+eval "$(zoxide init zsh)"
+
 # Atuin
 source $DOTFILES_PATH/zsh/extra/atuin.sh
 
