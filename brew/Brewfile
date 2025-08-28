@@ -1,0 +1,38 @@
+tap "homebrew/bundle"
+brew "atuin"
+brew "bat"
+brew "eza"
+brew "mas"
+brew "neovim"
+brew "stow"
+cask "1password"
+cask "1password-cli"
+cask "brave-browser"
+cask "cleanmymac"
+cask "cleanshot"
+cask "elgato-stream-deck"
+cask "figma"
+cask "firefox"
+cask "ghostty"
+cask "google-chrome"
+cask "google-chrome@canary"
+cask "jetbrains-toolbox"
+cask "little-snitch"
+cask "microsoft-excel"
+cask "microsoft-word"
+cask "miro"
+cask "obs"
+cask "orbstack"
+cask "proxyman"
+cask "raycast"
+cask "shifty"
+cask "slack"
+cask "spotify"
+cask "whatsapp"
+mas "Bitwarden", id: 1352778147
+mas "One Thing", id: 1604176982
+mas "RAR Unarchiver - Unzip RAR ZIP", id: 1527959974
+mas "Slack", id: 803453959
+mas "Spark", id: 1176895641
+mas "Velja", id: 1607635845
+mas "WiFi Explorer", id: 494803304

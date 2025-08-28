@@ -14,20 +14,19 @@ chsh -s $(which zsh)
 echo " 🍉 Installing zim"
 curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
 
-#if [ ! -d "$HOME/.utilsh" ]; then
-#  if [ -z "$UTILSH_PATH" ]; then
-#    echo " 🧢 Installing utilsh"
-#    git clone --depth 1 git@github.com:raulanatol/utilsh.git "$HOME/.utilsh"
-#  fi
-#fi
-#
-#if os::is_macos; then
-#  sout::info "Installing MacOS 🍎 custom packages"
-#  utils::install_macos
-#fi
-#
-#source "$DOTFILES_PATH/langs/python/install.sh"
-#source "$DOTFILES_PATH/misc/install.sh"
-#
+if [ ! -d "$HOME/.utilsh" ]; then
+  if [ -z "$UTILSH_PATH" ]; then
+    echo " 🧢 Installing utilsh"
+    git clone --depth 1 git@github.com:raulanatol/utilsh.git "$HOME/.utilsh"
+  fi
+fi
+
+if os::is_macos; then
+  sout::info "Installing MacOS 🍎 custom packages"
+  utils::install_macos
+fi
+
+source "$DOTFILES_PATH/langs/python/install.sh"
+source "$DOTFILES_PATH/misc/install.sh"
 
 sout::info " 👌 Done"
