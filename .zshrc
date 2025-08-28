@@ -12,7 +12,7 @@ source $DOTFILES_PATH/zsh/init.sh
 
 fpath=("$DOTFILES_PATH/zsh/completions" "$UTILSH_PATH/completions" $fpath)
 
-autoload -U compaudit && autoload -Uz compinit && compinit
+#autoload -U compaudit && autoload -Uz compinit && compinit
 
 # bindings...
 source $DOTFILES_PATH/zsh/bindings/key-bindings.zsh
