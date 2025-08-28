@@ -14,9 +14,7 @@ INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}";
 WORK="$HOME/work"
 MISC_SCRIPTS="$HOME/utils/misc"
 IDEA_SCRIPTS="$HOME/utils/idea_scripts"
-
-ITERM2_PYTHON_PATH=$HOME/Library/Application\ Support/iTerm2/iterm2env/versions/3.8.6/bin/python3.8
-ITERM2_SCRIPTS=$HOME/Library/Application\ Support/iTerm2/Scripts
+CERT_PATH="$HOME/utils/cert_path"
 
 # Java
 export JAVA_HOME=$(/usr/libexec/java_home) # Latest
