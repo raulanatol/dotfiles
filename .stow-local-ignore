@@ -1,0 +1,12 @@
+.DS_Store
+.editorconfig
+.git
+.gitignore
+LICENSE
+README.md
+Makefile
+symlinks
+.idea
+.config/raycast
+.scripts
+brew

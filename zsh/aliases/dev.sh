@@ -23,7 +23,3 @@ alias java14='export JAVA_HOME=$JAVA_14_HOME'
 alias java17='export JAVA_HOME=$JAVA_17_HOME'
 alias java21='export JAVA_HOME=$JAVA_21_HOME'
 
-# iTerm2
-alias tt_badge='$ITERM2_PYTHON_PATH "$ITERM2_SCRIPTS"/set_badge_text.py'
-alias tt_title='dot iterm2 set_window_title'
-alias tt_tab_title='dot iterm2 set_tab_title'
