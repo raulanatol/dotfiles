@@ -1,23 +1,52 @@
 # raulanatol dotfiles
 
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+A collection of configuration files and scripts to set up a development environment on macOS.
+
 **Table of Contents**
 
-- [Install](#install)
-- [How to update the dotfiles project](#how-to-update-the-dotfiles-project)
-- [How to add more symlinks?](#how-to-add-more-symlinks)
-- [How to add a new application?](#how-to-add-a-new-application)
-- [Extra installation guide](#extra-installation-guide)
-    - [Configure iTerm](#configure-iterm)
-- [Misc](#misc)
-    - [Reload completion](#reload-completion)
+- [Overview](#overview)
+- [Installation](#installation)
+- [Available Commands](#available-commands)
+- [Updating](#updating)
+- [Configuration](#configuration)
+  - [Adding Symlinks](#adding-symlinks)
+  - [Adding New Applications](#adding-new-applications)
+- [Post-Installation Setup](#post-installation-setup)
+  - [iTerm2 Configuration](#iterm2-configuration)
+- [Maintenance](#maintenance)
+  - [Reloading Completions](#reloading-completions)
+  - [macOS Defaults Management](#macos-defaults-management)
+- [Project Structure](#project-structure)
+- [Troubleshooting](#troubleshooting)
+- [Contributing](#contributing)
+- [License](#license)
 
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+## Overview
 
-## Install
+This repository contains configuration files for various development tools and applications, including:
 
-Run this:
+- Shell configurations (zsh, bash)
+- Terminal emulators (iTerm2, Alacritty, Kitty, WezTerm)
+- Text editors (Neovim, Lite XL, Pulsar)
+- Window managers (Phoenix, Hammerspoon)
+- Package managers (Homebrew)
+- And many more...
+
+## Installation
+
+**Prerequisites:**
+
+- macOS (latest version recommended)
+- 1Password with SSH agent configured
+- Git installed on your system
+
+To install these dotfiles on your system:
+
+1. Update macOS to the latest version through System Preferences
+2. Set up an SSH key using 1Password. Install
+   the [1Password SSH agent](https://developer.1password.com/docs/ssh/get-started/#step-3-turn-on-the-1password-ssh-agent)
+   and sync your SSH keys locally
+3. Clone and install the dotfiles:
 
 ```sh
 git clone https://github.com/raulanatol/dotfiles.git ~/.dotfiles
@@ -25,61 +54,156 @@ cd ~/.dotfiles
 make install
 ```
 
-## How to update the dotfiles project
+This will:
 
-Something we need to update the dotfiles project, new brew applications installed, etc. To do this you only need to
-execute
+- Clone the repository to `~/.dotfiles`
+- Create symbolic links to your home directory
+- Install required dependencies via Homebrew
+
+## Available Commands
+
+The project includes a `Makefile` with several useful commands:
+
+- `make install` - Install all dotfiles and dependencies
+- `make checkpoint` - Save current system state (Homebrew packages, etc.)
+- `make update` - Update all Homebrew packages and applications
+- `make clean` - Remove all symbolic links (uninstall)
+- `make status` - Check the status of all symbolic links
+
+## Updating
+
+When you need to update the dotfiles project (e.g., after installing new Homebrew applications or making configuration
+changes), run:
 
 ```shell
 make checkpoint
 ```
 
-## How to add more symlinks?
+This command will capture the current state of your system and update the relevant configuration files.
 
-Edit the file `symlinks` and add a new line.
+**Note:** All `make` commands should be run from the `~/.dotfiles` directory.
 
-## How to add a new application?
+## Configuration
 
-Create a new folder with the name of the application and put inside all the files that this application needed.
+### Adding Symlinks
 
-# Extra installation guide
+To add new symbolic links, edit the `symlinks` file and add a new line for each file or directory you want to link.
 
-## Configure iTerm
+### Adding New Applications
 
-Preferences > General > Preferences >
+To add configuration for a new application:
 
-- ✅ Load preferences from a custom folder or URL  (~/.dotfiles/iTerm)
-- ✅ Save changes to folder when iTerm2 quits
+1. Create a new folder with the application's name in the `apps/` directory
+2. Place all configuration files the application needs inside this folder
+3. The files will be automatically linked during installation
 
-# Misc
+## Post-Installation Setup
 
-## Reload completion
+### iTerm2 Configuration
 
-Execute the below script, after that open a new terminal.
+After installation, configure iTerm2 to use the dotfiles:
+
+1. Open iTerm2 Preferences
+2. Go to **General** > **Preferences**
+3. Enable **Load preferences from a custom folder or URL**
+4. Set the path to `~/.dotfiles/iTerm`
+5. Enable **Save changes to folder when iTerm2 quits**
+
+## Maintenance
+
+### Reloading Completions
+
+If you need to reload shell completions after making changes:
 
 ```shell
 .scripts/reload_completion.sh
 ```
 
-## New mac defaults
+**Note:** Open a new terminal session after running this script for changes to take effect.
 
-```shell
-defaults read > before
+### macOS Defaults Management
+
+To track changes in macOS system preferences:
+
+1. Capture current state:
+   ```shell
+   defaults read > before
+   ```
+
+2. Make changes through the UI
+
+3. Capture new state:
+   ```shell
+   defaults read > after
+   ```
+
+4. Compare the differences:
+   ```shell
+   diff before after
+   ```
+
+**Useful Resources:**
+
+- [Change macOS User Preferences via Command Line](https://pawelgrzybek.com/change-macos-user-preferences-via-command-line/)
+- [macOS Defaults Command](https://www.shell-tips.com/mac/defaults/)
+- [macOS Defaults Database](https://macos-defaults.com)
+
+## Project Structure
+
+```
+dotfiles/
+├── alfred/          # Alfred workflows and preferences
+├── apps/            # Application-specific configurations
+├── brew/            # Homebrew packages and casks
+├── git/             # Git configuration
+├── hammerspoon/     # Hammerspoon scripts
+├── iTerm/           # iTerm2 profiles and preferences
+├── langs/           # Language-specific configurations
+├── modules/         # Shell modules (z, zimfw)
+├── nvim/            # Neovim configuration
+├── phoenix/         # Phoenix window manager config
+├── raycast/         # Raycast scripts and settings
+├── shell/           # Shell utilities and functions
+├── sketchybar/      # SketchyBar configuration
+├── skhd/            # SKHD key bindings
+├── ssh/             # SSH configuration
+├── starship/        # Starship prompt configuration
+├── vim/             # Vim configuration
+├── zsh/             # Zsh configuration and aliases
+├── symlinks         # Symbolic links configuration
+└── Makefile         # Installation and maintenance scripts
 ```
 
-Change the preference (using the UI)
+---
 
-```shell
-defaults read > after
-```
+## Troubleshooting
 
-And check the diff
+### Common Issues
 
-```shell
-diff before after
-```
+- **Symbolic links not working**: Ensure you have the necessary permissions and that the target files exist
+- **Homebrew packages not installing**: Make sure Homebrew is properly installed and updated
+- **SSH key issues**: Verify that 1Password SSH agent is running and your keys are synced
 
-More info:
- - https://pawelgrzybek.com/change-macos-user-preferences-via-command-line/
- - https://www.shell-tips.com/mac/defaults/
- - https://macos-defaults.com
+### Getting Help
+
+If you encounter issues:
+
+1. Check the [Issues](https://github.com/raulanatol/dotfiles/issues) page on GitHub
+2. Ensure you've followed all prerequisites
+3. Verify your macOS version is compatible
+4. Check the [Makefile](https://github.com/raulanatol/dotfiles/blob/main/Makefile) for available commands
+
+## Contributing
+
+Contributions are welcome! If you want to improve these dotfiles:
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly on your system
+5. Submit a pull request
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+

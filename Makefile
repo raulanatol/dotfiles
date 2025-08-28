@@ -13,7 +13,3 @@ checkpoint:
 
 check:
 	@echo "✅"
-
-docs:
-	@doctoc README.md
-	@echo "📚 Documentation ready!"
