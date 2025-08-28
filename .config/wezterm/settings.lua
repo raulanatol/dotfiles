@@ -11,6 +11,38 @@ function module.apply_to_config(config)
 
         return ''
     end)
+
+    local bar = wezterm.plugin.require("https://github.com/adriankarlen/bar.wezterm")
+    bar.apply_to_config(config, {
+      position = "bottom",
+      padding = {
+        left = 2,
+        right = 2,
+      },
+      separator = {
+        space = 1,
+        left_icon = "",
+        right_icon = "",
+        field_icon = wezterm.nerdfonts.indent_line,
+      },
+      modules = {
+          workspace = {
+              enabled = false
+          },
+          pane = {
+              enabled = false
+          },
+          username = {
+              enabled = false
+          },
+          hostname = {
+              enabled = false
+          },
+          clock = {
+              enabled = false
+          }
+      }
+    })
 end
 
 return module
