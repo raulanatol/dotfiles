@@ -12,7 +12,11 @@ sout::info " 👾 ZSH as the default shell"
 chsh -s $(which zsh)
 
 echo " 🍉 Installing zim"
-curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
+if [ ! -d "$HOME/.zim" ]; then
+  curl -fsSL https://raw.githubusercontent.com/zimfw/install/master/install.zsh | zsh
+else
+  echo " 🍉 Already installed"
+fi
 
 if [ ! -d "$HOME/.utilsh" ]; then
   if [ -z "$UTILSH_PATH" ]; then
