@@ -10,11 +10,6 @@ echo " Applying symlinks using stow"
 #ln -sf "$DOTFILES_PATH"/git/.gitattributes "$HOME"/.gitattributes
 #ln -sf "$DOTFILES_PATH"/ssh/config "$HOME"/.ssh/config
 #ln -sf "$DOTFILES_PATH"/starship/starship.toml "$HOME"/.config/starship.toml
-  #ln -sf "$DOTFILES_PATH"/zsh/.zshrc "$HOME"/.zshrc
-  #ln -sf "$DOTFILES_PATH"/zsh/.zshenv "$HOME"/.zshenv
-  #ln -sf "$DOTFILES_PATH"/zsh/.zprofile "$HOME"/.zprofile
-  #ln -sf "$DOTFILES_PATH"/zim/.zlogin "$HOME"/.zlogin
-  #ln -sf "$DOTFILES_PATH"/zim/.zimrc "$HOME"/.zimrc
 #ln -sf "$DOTFILES_PATH"/langs/ruby/gemrc.symlink "$HOME"/.gemrc
 #ln -sf "$HOME/Library/Mobile\ Documents/iCloud~md~obsidian/Documents" "$HOME/Brain"
 #ln -sf "$DOTFILES_PATH/iTerm/scripts/set_badge_text.py" "$HOME"/Library/Application\ Support/iTerm2/Scripts/set_badge_text.py
