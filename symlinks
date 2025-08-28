@@ -5,7 +5,6 @@ mkdir -p $HOME/.config/nvim
 
 echo " Applying symlinks using stow"
 
-#ln -sf "$DOTFILES_PATH"/apps/procs/.procs.toml "$HOME"/.procs.toml
 #ln -sf "$DOTFILES_PATH"/vim/.vimrc "$HOME"/.vimrc
 #ln -sf "$DOTFILES_PATH"/apps/nvim/init.vim "$HOME"/.config/nvim/init.vim
 #ln -sf "$DOTFILES_PATH"/git/.gitconfig "$HOME"/.gitconfig
