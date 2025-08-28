@@ -25,12 +25,16 @@ A collection of configuration files and scripts to set up a development environm
 
 This repository contains configuration files for various development tools and applications, including:
 
-- Shell configurations (zsh, bash)
-- Terminal emulators (iTerm2, Alacritty, Kitty, WezTerm)
-- Text editors (Neovim, Lite XL, Pulsar)
-- Window managers (Phoenix, Hammerspoon)
+- Shell configurations (zsh with zim framework)
+- Terminal emulator (WezTerm)
+- Text editors (Neovim, Vim)
 - Package managers (Homebrew)
-- And many more...
+- Development tools (procs, mongosh)
+- Shell utilities and functions
+- Git configuration
+- SSH configuration
+- Starship prompt configuration
+- And more...
 
 ## Installation
 
@@ -66,9 +70,10 @@ The project includes a `Makefile` with several useful commands:
 
 - `make install` - Install all dotfiles and dependencies
 - `make checkpoint` - Save current system state (Homebrew packages, etc.)
-- `make update` - Update all Homebrew packages and applications
-- `make clean` - Remove all symbolic links (uninstall)
-- `make status` - Check the status of all symbolic links
+- `make reload` - Reload shell configuration
+- `make check` - Check system status (default goal)
+
+**Note:** All `make` commands should be run from the `~/.dotfiles` directory.
 
 ## Updating
 
@@ -80,8 +85,6 @@ make checkpoint
 ```
 
 This command will capture the current state of your system and update the relevant configuration files.
-
-**Note:** All `make` commands should be run from the `~/.dotfiles` directory.
 
 ## Configuration
 
@@ -95,7 +98,8 @@ To add configuration for a new application:
 
 1. Create a new folder with the application's name in the `apps/` directory
 2. Place all configuration files the application needs inside this folder
-3. The files will be automatically linked during installation
+3. Add the appropriate symlink in the `symlinks` file
+4. The files will be automatically linked during installation
 
 ## Post-Installation Setup
 
@@ -152,29 +156,29 @@ To track changes in macOS system preferences:
 
 ```
 dotfiles/
-├── alfred/          # Alfred workflows and preferences
 ├── apps/            # Application-specific configurations
+│   ├── mongosh/     # MongoDB shell configuration
+│   ├── nvim/        # Neovim configuration
+│   ├── procs/       # Procs process viewer config
+│   ├── raycast/     # Raycast scripts and settings
+│   └── wezterm/     # WezTerm terminal configuration
 ├── brew/            # Homebrew packages and casks
-├── git/             # Git configuration
-├── hammerspoon/     # Hammerspoon scripts
-├── iTerm/           # iTerm2 profiles and preferences
+├── git/             # Git configuration files
 ├── langs/           # Language-specific configurations
-├── modules/         # Shell modules (z, zimfw)
-├── nvim/            # Neovim configuration
-├── phoenix/         # Phoenix window manager config
-├── raycast/         # Raycast scripts and settings
+│   ├── python/      # Python environment setup
+│   └── ruby/        # Ruby configuration
+├── mac/             # macOS-specific installation scripts
+├── misc/            # Miscellaneous installation scripts
 ├── shell/           # Shell utilities and functions
-├── sketchybar/      # SketchyBar configuration
-├── skhd/            # SKHD key bindings
 ├── ssh/             # SSH configuration
 ├── starship/        # Starship prompt configuration
 ├── vim/             # Vim configuration
+├── zim/             # Zim framework configuration
 ├── zsh/             # Zsh configuration and aliases
+├── .scripts/        # Installation and utility scripts
 ├── symlinks         # Symbolic links configuration
-└── Makefile         # Installation and maintenance scripts
+└── Makefile         # Build and installation commands
 ```
-
----
 
 ## Troubleshooting
 
@@ -183,6 +187,7 @@ dotfiles/
 - **Symbolic links not working**: Ensure you have the necessary permissions and that the target files exist
 - **Homebrew packages not installing**: Make sure Homebrew is properly installed and updated
 - **SSH key issues**: Verify that 1Password SSH agent is running and your keys are synced
+- **Zsh configuration not loading**: Check that zim framework is properly installed and configured
 
 ### Getting Help
 

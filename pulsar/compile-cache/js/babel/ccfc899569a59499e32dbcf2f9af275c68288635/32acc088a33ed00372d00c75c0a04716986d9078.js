@@ -1,9 +1,0 @@
-'use babel';
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.API_VERSION = void 0;
-const API_VERSION = Symbol('Private property: Semantic version of the service endpoint.');
-exports.API_VERSION = API_VERSION;
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJBUElfVkVSU0lPTiIsIlN5bWJvbCJdLCJzb3VyY2VzIjpbInByaXZhdGUtc3ltYm9scy5qcyJdLCJzb3VyY2VzQ29udGVudCI6WyIndXNlIGJhYmVsJ1xuXG5jb25zdCBBUElfVkVSU0lPTiA9IFN5bWJvbCgnUHJpdmF0ZSBwcm9wZXJ0eTogU2VtYW50aWMgdmVyc2lvbiBvZiB0aGUgc2VydmljZSBlbmRwb2ludC4nKVxuZXhwb3J0IHtBUElfVkVSU0lPTn1cbiJdLCJtYXBwaW5ncyI6IkFBQUEsV0FBVzs7QUFBQTtFQUFBO0FBQUE7QUFBQTtBQUVYLE1BQU1BLFdBQVcsR0FBR0MsTUFBTSxDQUFDLDZEQUE2RCxDQUFDO0FBQUEifQ==
