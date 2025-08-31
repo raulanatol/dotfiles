@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+COMPUTER_NAME="wololoo"
 # Inspired by https://github.com/mathiasbynens/dotfiles/blob/master/.macos
 
 # Close any open System Preferences panes, to prevent them from overriding
@@ -7,6 +8,7 @@
 osascript -e 'tell application "System Preferences" to quit'
 
 sudo -v
+set -x
 
 # Keep-alive: update existing `sudo` time stamp until `.macos` has finished
 while true; do
@@ -19,16 +21,26 @@ done 2>/dev/null &
 sudo nvram SystemAudioVolume=" "
 
 # Play user interface sound effects: false
-defaults write com.apple.systemsound "com.apple.sound.uiaudio.enabled" -int 0
-defaults write com.apple.sound.beep.flash 0
-defaults write com.apple.sound.beep.volume 0
-defaults write com.apple.sound.uiaudio.enabled 0
+defaults write NSGlobalDomain com.apple.sound.beep.flash -int 0
+defaults write NSGlobalDomain com.apple.sound.uiaudio.enabled -int 0
 
 # Disable Big Sur Chime
+defaults write com.apple.PowerChime ChimeOnAllHardware -bool false; killall PowerChime
 sudo nvram StartupMute=%01
 
 # Timezone 🏝
 sudo systemsetup -settimezone "Atlantic/Canary" > /dev/null
+
+# Computer name
+sudo scutil --set ComputerName $COMPUTER_NAME
+sudo scutil --set HostName $COMPUTER_NAME
+sudo scutil --set LocalHostName $COMPUTER_NAME
+sudo defaults write \
+  /Library/Preferences/SystemConfiguration/com.apple.smb.server \
+  NetBIOSName -string $COMPUTER_NAME
+
+# Open App from 3rd-party developer
+defaults write /Library/Preferences/com.apple.security GKAutoRearm -bool NO
 
 ###############################################################################
 # Trackpad, mouse, keyboard, Bluetooth accessories, and input                 #
@@ -38,7 +50,7 @@ sudo systemsetup -settimezone "Atlantic/Canary" > /dev/null
 sudo defaults write /Library/Preferences/com.apple.loginwindow showInputMenu -bool true
 
 # Disable “natural” (Lion-style) scrolling
-#defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
+defaults write NSGlobalDomain com.apple.swipescrolldirection -bool false
 
 # Set a blazingly fast keyboard repeat rate
 defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool true
@@ -147,6 +159,10 @@ defaults write com.apple.dock autohide -bool true
 # Make Dock icons of hidden applications translucent
 defaults write com.apple.dock showhidden -bool true
 
+# remove all default icons on the dock (for when first setting up)
+defaults delete com.apple.dock persistent-apps
+defaults delete com.apple.dock persistent-others
+
 ###############################################################################
 # Terminal & iTerm 2                                                          #
 ###############################################################################
@@ -204,6 +220,19 @@ defaults write com.apple.ActivityMonitor ShowCategory -int 0
 # Sort Activity Monitor results by CPU usage
 defaults write com.apple.ActivityMonitor SortColumn -string "CPUUsage"
 defaults write com.apple.ActivityMonitor SortDirection -int 0
+
+#######################################################################
+    ########
+# TextEdit
+           #
+#######################################################################
+    ########
+
+# Use plain text mode for new TextEdit documents
+defaults write com.apple.TextEdit RichText -int 0
+# Open and save files as UTF-8 in TextEdit
+defaults write com.apple.TextEdit PlainTextEncoding -int 4
+defaults write com.apple.TextEdit PlainTextEncodingForWrite -int 4
 
 # Kill affected apps
 for app in "Dock" "Finder"; do
