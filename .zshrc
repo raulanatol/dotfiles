@@ -1,8 +1,5 @@
 DISABLE_AUTO_TITLE="true"
 
-# Start zim
-source $ZIM_HOME/init.zsh
-
 # Async mode for autocompletion
 ZSH_AUTOSUGGEST_USE_ASYNC=true
 ZSH_HIGHLIGHT_MAXLENGTH=300
@@ -45,12 +42,22 @@ setopt hist_save_no_dups
 setopt hist_ignore_dups
 setopt hist_find_no_dups
 
+# Remove path separator from WORDCHARS.
+# WORDCHARS=${WORDCHARS//[\/]}
+# ZSH_AUTOSUGGEST_MANUAL_REBIND=1
+# ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets)
+
 # Completion styling
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Za-z}'
 zstyle ':completion:*' list-colors "${(s.:.)LS_COLORS}"
 zstyle ':completion:*' menu no
 zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
+
+# Customize the main highlighter styles.
+# See https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/docs/highlighters/main.md#how-to-tweak-it
+# typeset -A ZSH_HIGHLIGHT_STYLES
+# ZSH_HIGHLIGHT_STYLES[comment]='fg=242'
 
 # Shell integrations
 eval "$(fzf --zsh)"
