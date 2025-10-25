@@ -1,80 +1,182 @@
+tap "grafana/grafana"
 tap "homebrew/bundle"
+tap "localazy/tools"
+tap "mykolaharmash/git-jump"
+tap "tunneltodev/tap"
+brew "openssl@3"
+brew "grpc"
+brew "apache-arrow"
 brew "atuin"
 brew "autojump"
 brew "bat"
+brew "node"
+brew "bruno-cli"
+brew "clinfo"
+brew "curl"
 brew "exif"
 brew "eza"
 brew "flow"
 brew "fnm"
 brew "fzf"
+brew "git-delta"
 brew "git-open"
+brew "python@3.13", link: false
+brew "glances"
+brew "hashcat"
+brew "htop"
+brew "imagemagick"
+brew "pandoc"
+brew "jupyterlab"
+brew "k6"
 brew "mas"
+brew "mongosh"
 brew "neovim"
 brew "openjdk"
 brew "openjdk@17"
+brew "pdfly"
+brew "pnpm"
+brew "postgresql@14"
 brew "pyenv"
 brew "pyenv-virtualenv"
+brew "rio-terminal"
+brew "rust"
+brew "shellcheck"
 brew "spark"
 brew "starship"
 brew "stow"
+brew "tree"
 brew "z"
 brew "zoxide"
+brew "localazy/tools/localazy"
+brew "mykolaharmash/git-jump/git-jump"
+brew "tunneltodev/tap/tunnelto"
 cask "1password"
 cask "1password-cli"
 cask "adobe-acrobat-reader"
 cask "angry-ip-scanner"
 cask "app-buddy"
-cask "arduino-ide"
 cask "autofirma"
 cask "bambu-studio"
+cask "bartender"
 cask "betterdisplay"
 cask "brave-browser"
 cask "bruno"
+cask "chromium"
 cask "cleanmymac"
 cask "cleanshot"
 cask "cursor"
+cask "cyberduck"
 cask "elgato-stream-deck"
 cask "figma"
 cask "firefox"
+cask "ghostty"
 cask "google-chrome"
 cask "google-chrome@canary"
 cask "granola"
 cask "imageoptim"
+cask "iterm2"
 cask "jetbrains-toolbox"
 cask "keycastr"
-cask "libreoffice"
-cask "lightburn"
+cask "kitty"
 cask "little-snitch"
 cask "logi-options+"
 cask "loopback"
 cask "micro-snitch"
+cask "microsoft-auto-update"
 cask "microsoft-excel"
 cask "microsoft-word"
 cask "miro"
+cask "ngrok"
+cask "notion"
+cask "notunes"
+cask "numi"
 cask "obs"
 cask "obsidian"
 cask "odrive"
+cask "one-switch"
 cask "orbstack"
 cask "parsify"
 cask "pika"
 cask "pixelsnap"
+cask "pomotroid"
 cask "postman"
 cask "proxyman"
 cask "qflipper"
 cask "raycast"
 cask "responsively"
+cask "rio"
+cask "shifty"
+cask "shortcat"
+cask "skype"
 cask "slack"
 cask "soundsource"
 cask "spotify"
 cask "telegram"
+cask "textmate"
+cask "texts"
 cask "the-unarchiver"
 cask "ticktick"
+cask "twitch"
+cask "wave"
 cask "wezterm"
 cask "whatsapp"
+cask "zeplin"
 cask "zoom"
+mas "Almighty", id: 1576440429
+mas "Amazing AI", id: 1660147028
+mas "Battery Indicator", id: 1206020918
 mas "Bitwarden", id: 1352778147
+mas "Canary Mail", id: 1236045954
+mas "Color Picker", id: 641027709
+mas "ColorSlurp", id: 1287239339
+mas "Dato", id: 1470584107
+mas "DemoPro", id: 1384206666
+mas "Divvy", id: 413857545
+mas "EasyRes", id: 688211836
+mas "ExcalidrawZ", id: 6636493997
+mas "Gapplin", id: 768053424
+mas "GIPHY CAPTURE", id: 668208984
+mas "Goodnotes", id: 1444383602
+mas "Grammarly for Safari", id: 1462114288
+mas "Home Assistant", id: 1099568401
+mas "iMovie", id: 408981434
+mas "IP Scanner", id: 404167149
+mas "iPhoto", id: 408981381
+mas "Irvue", id: 1039633667
+mas "Keynote", id: 409183694
+mas "LG Screen Manager", id: 1142051783
+mas "Magnet", id: 441258766
+mas "MenubarClock", id: 492167985
+mas "Micro Snitch", id: 972028355
+mas "NextDNS", id: 1464122853
+mas "NordVPN", id: 905953485
+mas "Numbers", id: 409203825
 mas "One Thing", id: 1604176982
+mas "Pages", id: 409201541
+mas "Pastel", id: 413897608
 mas "RAR Unarchiver - Unzip RAR ZIP", id: 1527959974
+mas "rcmd", id: 1596283165
+mas "RunCat", id: 1429033973
+mas "Slack", id: 803453959
 mas "Spark", id: 1176895641
+mas "Speediness", id: 1596706466
+mas "Sweet Home 3D", id: 669289700
+mas "Telegram", id: 747648890
+mas "The Unarchiver", id: 425424353
+mas "TickTick", id: 966085870
+mas "Toggl Track", id: 1291898086
 mas "Velja", id: 1607635845
 mas "WiFi Explorer", id: 494803304
+mas "Xcode", id: 497799835
+mas "Yubico Authenticator", id: 1497506650
+mas "ZoomMe", id: 1437487517
+vscode "amazonwebservices.codewhisperer-for-command-line-companion"
+vscode "anysphere.cursorpyright"
+vscode "catppuccin.catppuccin-vsc"
+vscode "github.vscode-github-actions"
+vscode "jayep.switch2webstorm"
+vscode "ms-azuretools.vscode-containers"
+vscode "ms-azuretools.vscode-docker"
+vscode "ms-python.debugpy"
+vscode "ms-python.python"
+vscode "ms-vscode.makefile-tools"
