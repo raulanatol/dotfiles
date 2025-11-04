@@ -11,9 +11,9 @@ echo 'Brew apps exported!'
 # ------------
 # Python save
 # ------------
-rm -f "$DOTFILES_PATH/langs/python/requirements.txt"
-pip freeze >"$DOTFILES_PATH/langs/python/requirements.txt"
-echo 'Python apps exported!'
+#rm -f "$DOTFILES_PATH/langs/python/requirements.txt"
+#pip freeze >"$DOTFILES_PATH/langs/python/requirements.txt"
+#echo 'Python apps exported!'
 
 # ---------------
 # Private folder
@@ -27,10 +27,10 @@ if [[ -n "${PRIVATE_FOLDER:+x}" ]] && [[ -d "$PRIVATE_FOLDER" ]]; then
   cp "$DOTFILES_PATH/zsh/aliases/private-aliases.sh" "$PRIVATE_FOLDER/zsh/aliases/private-aliases.sh"
 fi
 
-#cd "$DOTFILES_PATH" || exit
-#git pull
-#git add .
-#git commit -m "Checkpoint $(date +"%d_%m_%Y")"
-#git push -u origin main
+cd "$DOTFILES_PATH" || exit
+git pull
+git add .
+git commit -m "Checkpoint $(date +"%d_%m_%Y")"
+git push -u origin main
 
 echo " 👌 Done"
