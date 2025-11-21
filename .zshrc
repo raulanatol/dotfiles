@@ -91,3 +91,6 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+# Added by Hugging Face CLI installer
+export PATH="/Users/raulanatol/.local/bin:$PATH"

@@ -48,6 +48,26 @@ function module.apply_to_config(config)
                 end),
             },
         },
+        {
+            key = 'Home',
+            mods = 'NONE',
+            action = wezterm.action.SendKey { key = 'a', mods = 'CTRL' }
+        },
+        {
+            key = 'End',
+            mods = 'NONE',
+            action = wezterm.action.SendKey { key = 'e', mods = 'CTRL' }
+        },
+        {
+            key = 'Home',
+            mods = 'SHIFT',
+            action = wezterm.action.SendString '\x01', -- Ctrl+A
+        },
+        {
+            key = 'End',
+            mods = 'SHIFT',
+            action = wezterm.action.SendString '\x05', -- Ctrl+E
+        },
     }
 end
 

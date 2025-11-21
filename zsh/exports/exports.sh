@@ -15,7 +15,6 @@ INFOPATH="/opt/homebrew/share/info:${INFOPATH:-}";
 WORK="$HOME/work"
 MISC_SCRIPTS="$HOME/utils/misc"
 IDEA_SCRIPTS="$HOME/utils/idea_scripts"
-CERT_PATH="$HOME/utils/cert_path"
 
 # Java
 export JAVA_HOME=$(/usr/libexec/java_home) # Latest
@@ -35,9 +34,11 @@ export VIRTUAL_ENV_DISABLE_PROMPT=1
 
 export ZZM_HOME="$HOME/.zzm"
 export ZAZUME_NODE_PATH="$HOME/.fnm/node-versions/v18.16.0/installation/bin"
+export ZAZUME_WORKDIR="$WORK/zazume"
 
 paths=(
   "$HOME/bin"
+  "$HOME/.local/bin"
   "$UTILSH_PATH/bin"
   "$RUST_PATH/bin"
   "$GO_PATH/bin"
