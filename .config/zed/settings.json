@@ -1,12 +1,20 @@
 {
-  "buffer_font_family": "JetBrainsMono Nerd Font",
   "base_keymap": "JetBrains",
+  "agent": {
+    "default_model": {
+      "provider": "openai",
+      "model": "gpt-5.1",
+    },
+    "always_allow_tool_actions": true,
+    "model_parameters": [],
+  },
+  "buffer_font_family": "JetBrainsMono Nerd Font",
   "icon_theme": "Zed (Default)",
   "ui_font_size": 16,
   "buffer_font_size": 16.0,
   "theme": {
     "mode": "system",
     "light": "One Light",
-    "dark": "Catppuccin Macchiato"
-  }
+    "dark": "Catppuccin Macchiato",
+  },
 }

@@ -81,9 +81,6 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 export BUN_INSTALL="/Users/raulanatol/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
-# Q post block. Keep at the bottom of this file.
-# [[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"
-
 # pnpm
 export PNPM_HOME="/Users/raulanatol/Library/pnpm"
 case ":$PATH:" in
