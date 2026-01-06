@@ -69,7 +69,6 @@ brew "tunneltodev/tap/tunnelto"
 cask "1password"
 cask "1password-cli"
 cask "adobe-acrobat-reader"
-cask "adoptopenjdk8"
 cask "angry-ip-scanner"
 cask "app-buddy"
 cask "autodesk-fusion"
@@ -95,7 +94,6 @@ cask "imageoptim"
 cask "iterm2"
 cask "jetbrains-toolbox"
 cask "keycastr"
-cask "kitty"
 cask "little-snitch"
 cask "logi-options+"
 cask "loopback"
@@ -111,7 +109,6 @@ cask "numi"
 cask "obs"
 cask "obsidian"
 cask "odrive"
-cask "one-switch"
 cask "orbstack"
 cask "parsify"
 cask "pika"
@@ -122,7 +119,6 @@ cask "proxyman"
 cask "qflipper"
 cask "raycast"
 cask "responsively"
-cask "rio"
 cask "shifty"
 cask "shortcat"
 cask "skype"
@@ -145,8 +141,6 @@ mas "Almighty", id: 1576440429
 mas "Amazing AI", id: 1660147028
 mas "Battery Indicator", id: 1206020918
 mas "Bitwarden", id: 1352778147
-mas "Canary Mail", id: 1236045954
-mas "Color Picker", id: 641027709
 mas "ColorSlurp", id: 1287239339
 mas "Dato", id: 1470584107
 mas "DemoPro", id: 1384206666
