@@ -12,6 +12,8 @@ function print_methods(obj)
 end
 
 function module.apply_to_config(config)
+    config.send_composed_key_when_left_alt_is_pressed = true
+    config.send_composed_key_when_right_alt_is_pressed = true
     config.keys = {
         {
             key = 'k',

@@ -22,16 +22,14 @@ Detailed changes:
 2. Extract the Jira ticket number (ZZM-XXX format) from the branch name or commit messages if available
 3. Generate a professional PR title in the format: `[ZZM-XXX] Title description` (max 72 characters total)
    - If no Jira ticket is found, just use: `Title description`
-4. Write the filled template to `/tmp/pr_body.md`, remove if already exists
-5. Execute the gh pr create command
+4. Create the filled template using Bash to `/tmp/pr_body.md` (use `cat >` to create the file)
+5. Push the branch to remote if not already pushed
+6. Execute the gh pr create command
 
-Then execute this bash command to create the pull request:
-
-```bash
-gh pr create --title "YOUR_TITLE_HERE" --body-file /tmp/pr_body.md --base main
-```
-
-Replace YOUR_TITLE_HERE with the generated title and TEMPLATE_BODY_HERE with the filled template below.
+Implementation notes:
+- Use Bash with `cat >` to create `/tmp/pr_body.md` directly (don't use Write tool for new files)
+- Push the branch before creating the PR if it's not already pushed
+- Then execute `gh pr create` with the generated title and body file
 
 ## PR template to Fill
 
