@@ -1,5 +1,11 @@
 {
   "includeCoAuthoredBy": false,
+  "companyAnnouncements": [
+    "🚨 Reminder: Use the command 'claude-zazume' to start a new session. Use the tokens with caution. 🔥🌲"
+  ],
+  "permissions": {
+    "deny": ["Bash(git commit:*)"]
+  },
   "hooks": {
     "Notification": [
       {

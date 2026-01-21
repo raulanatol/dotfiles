@@ -1,0 +1,4 @@
+hooks:
+    post-create:
+        - name: copy-env-files
+          command: sh .worktrunk/scripts/copy-env.sh "{{task.path}}"
