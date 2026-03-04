@@ -11,7 +11,7 @@ branches = false
 remotes = false
 timeout-ms = 0
 
-[select]
+[switch.picker]
 timeout-ms = 0
 branches = false
 remotes = false

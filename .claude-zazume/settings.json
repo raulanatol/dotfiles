@@ -1,10 +1,17 @@
 {
   "includeCoAuthoredBy": false,
-  "companyAnnouncements": [
-    "🚨 Reminder: Use the command 'claude-zazume' to start a new session. Use the tokens with caution. 🔥🌲"
-  ],
   "permissions": {
-    "deny": ["Bash(git commit:*)"]
+    "allow": [
+      "Read(*)",
+      "Search(*)",
+      "Edit(*)",
+      "Write(*)",
+      "MultiEdit(*)"
+    ],
+    "deny": [
+      "Bash(git commit:*)"
+    ],
+    "defaultModel": "acceptEdits"
   },
   "hooks": {
     "Notification": [
@@ -30,5 +37,11 @@
       }
     ]
   },
-  "model": "haiku"
+  "enabledPlugins": {
+    "rust-analyzer-lsp@claude-plugins-official": true,
+    "figma@claude-plugins-official": true
+  },
+  "companyAnnouncements": [
+    "🚨 Reminder: Use the command 'claude-zazume' to start a new session. Use the tokens with caution. 🔥🌲"
+  ]
 }

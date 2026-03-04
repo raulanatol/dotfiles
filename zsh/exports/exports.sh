@@ -18,7 +18,7 @@ IDEA_SCRIPTS="$HOME/utils/idea_scripts"
 
 # Java
 export JAVA_HOME=$(/usr/libexec/java_home) # Latest
-export JAVA_8_HOME=$(/usr/libexec/java_home -v1.8)
+export JAVA_8_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
 export JAVA_11_HOME=$(/usr/libexec/java_home -v11)
 export JAVA_14_HOME=$(/usr/libexec/java_home -v14)
 export JAVA_17_HOME=/opt/homebrew/Cellar/openjdk/17.0.1_1
@@ -35,6 +35,7 @@ export VIRTUAL_ENV_DISABLE_PROMPT=1
 export ZZM_HOME="$HOME/.zzm"
 export ZAZUME_NODE_PATH="$HOME/.fnm/node-versions/v18.16.0/installation/bin"
 export ZAZUME_WORKDIR="$WORK/zazume"
+export ZAZUME_BACKEND_PATH="$ZAZUME_WORKDIR/zzm-backend"
 
 paths=(
   "$HOME/bin"
