@@ -1,0 +1,51 @@
+#!/usr/bin/env bash
+
+git::current_branch() {
+  git rev-parse --abbrev-ref HEAD
+}
+
+git::has_changes() {
+  git status --porcelain
+}
+
+git::inside_work_tree() {
+  git rev-parse --is-inside-work-tree >/dev/null
+}
+
+git::is_in_repo() {
+  git rev-parse HEAD >/dev/null 2>&1
+}
+
+git::root() {
+  git rev-parse --show-toplevel
+}
+
+git::has_uncommitted_changes() {
+  git status --porcelain
+}
+
+git::has_remote() {
+  git remote > /dev/null 2>&1
+}
+
+git::get_remote_https_url() {
+  local remote_url
+  local http_remote_url
+  remote_url=$(git remote get-url origin)
+  if [ -z "$remote_url" ]; then
+    echo "No remote found"
+    exit 1
+  fi
+  http_remote_url=$(echo "$remote_url" | sed -e 's/git@github.com:/https:\/\/github.com\//')
+  http_remote_url=$(echo "$http_remote_url" | sed -e 's/\.git/\//')
+  echo "${http_remote_url}"
+}
+
+git::has_master_branch() {
+  git branch -a | grep master
+}
+
+git::has_main_branch() {
+  git branch -a | grep main
+}
+

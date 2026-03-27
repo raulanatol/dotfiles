@@ -1,0 +1,51 @@
+#!/usr/bin/env bash
+
+utils::install_macos() {
+  # Install brew if not installed
+  if ! [ -x "$(command -v brew)" ]; then
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    eval "$(/opt/homebrew/bin/brew shellenv)"
+  fi
+
+  # All apps (This line is 2 times because there are dependencies between brew cask and brew)
+  brew bundle --file="$DOTFILES_PATH/brew/Brewfile" || true
+  brew bundle --file="$DOTFILES_PATH/brew/Brewfile"
+  # Correct paths (so, we handle all with $PATH)
+  sudo truncate -s 0 /etc/paths
+
+  # Custom macOS "defaults"
+  sh "$DOTFILES_PATH/mac/install.sh"
+
+  utils::create_mac_symlinks
+  utils::sync_private_folder
+
+  # Install vim
+  sout::info " 👵🖥️  installing vim"
+
+  if [ ! -d "$HOME"/.vim/bundle/Vundle.vim ]; then
+    git clone https://github.com/VundleVim/Vundle.vim.git "$HOME"/.vim/bundle/Vundle.vim
+  fi
+
+  cp -r "$DOTFILES_PATH"/vim/colors/* "$HOME"/.vim/bundle/colors
+  vim +PluginInstall +qall
+
+  # Install neovim
+  sout::info " 👵🖥️  installing neovim"
+  sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  nvim +PluginInstall +qall
+}
+
+utils::create_mac_symlinks() {
+  mkdir -p $HOME/.config
+  sout::info " 🍎 Applying mac symlinks"
+  source "$DOTFILES_PATH/symlinks"
+}
+
+utils::sync_private_folder() {
+  if [ -n "$PRIVATE_FOLDER" ]; then
+    echo "Sync private files to private folder"
+    cp "$PRIVATE_FOLDER/zsh/exports/private-exports.sh" "$DOTFILES_PATH/zsh/exports/private-exports.sh"
+    cp "$PRIVATE_FOLDER/zsh/aliases/private-aliases.sh" "$DOTFILES_PATH/zsh/aliases/private-aliases.sh"
+    cp "$PRIVATE_FOLDER/"
+  fi
+}

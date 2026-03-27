@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+os::command_exists() {
+  type "$1" >/dev/null 2>&1
+}
+
+os::is_macos() {
+  [[ $(uname -s) == "Darwin" ]]
+}
+
+os::is_linux() {
+  [[ $(uname -s) == "Linux" ]]
+}
+
+os::get_default_browser() {
+  if os::is_macos; then
+    defaults read ~/Library/Preferences/com.apple.LaunchServices/com.apple.launchservices.secure | awk -F'\"' '/http;/{print window[(NR)-1]}{window[NR]=$2}'
+  else
+    exit 1
+  fi
+}

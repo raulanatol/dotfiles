@@ -1,0 +1,76 @@
+local wezterm = require 'wezterm'
+local act = wezterm.action
+
+local module = {}
+
+function print_methods(obj)
+    for key, value in pairs(obj) do
+        if type(value) == "function" then
+            wezterm.log_error("Método encontrado: " .. key)
+        end
+    end
+end
+
+function module.apply_to_config(config)
+    config.send_composed_key_when_left_alt_is_pressed = true
+    config.send_composed_key_when_right_alt_is_pressed = true
+    config.keys = {
+        {
+            key = 'k',
+            mods = 'CMD',
+            action = act.ClearScrollback 'ScrollbackAndViewport'
+        },
+        {
+            key = 'l',
+            mods = 'CMD',
+            action = act.ShowTabNavigator
+        },
+        {
+            key = 'LeftArrow',
+            mods = 'CMD',
+            action = act.ActivateWindowRelative(-1)
+        },
+        {
+            key = 'RightArrow',
+            mods = 'CMD',
+            action = act.ActivateWindowRelative(1)
+        },
+        {
+            key = 'r',
+            mods = 'CMD',
+            action = act.PromptInputLine {
+                description = 'Enter new name for window/tab',
+                action = wezterm.action_callback(function(window, _, line)
+                    -- line will be `nil` if they hit escape without entering anything
+                    -- An empty string if they just hit enter
+                    -- Or the actual line of text they wrote
+                    if line then
+                        window:active_tab():set_title(line)
+                    end
+                end),
+            },
+        },
+        {
+            key = 'Home',
+            mods = 'NONE',
+            action = wezterm.action.SendKey { key = 'a', mods = 'CTRL' }
+        },
+        {
+            key = 'End',
+            mods = 'NONE',
+            action = wezterm.action.SendKey { key = 'e', mods = 'CTRL' }
+        },
+        {
+            key = 'Home',
+            mods = 'SHIFT',
+            action = wezterm.action.SendString '\x01', -- Ctrl+A
+        },
+        {
+            key = 'End',
+            mods = 'SHIFT',
+            action = wezterm.action.SendString '\x05', -- Ctrl+E
+        },
+    }
+end
+
+return module

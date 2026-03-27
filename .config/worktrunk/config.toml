@@ -1,0 +1,17 @@
+[hooks]
+
+[post-create]
+env = "cp {{ repo_path }}/.env {{ worktree_path }}/.env"
+claude = "rsync -a --delete {{ repo_path }}/.claude/ {{ worktree_path }}/.claude/"
+node = "cp -R {{ repo_path }}/.nvmrc {{ worktree_path }}/.nvmrc"
+
+[list]
+full = false
+branches = false
+remotes = false
+timeout-ms = 0
+
+[select]
+timeout-ms = 0
+branches = false
+remotes = false

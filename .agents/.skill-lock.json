@@ -1,0 +1,83 @@
+{
+  "version": 3,
+  "skills": {
+    "rust-errors": {
+      "source": "EpicenterHQ/epicenter",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/EpicenterHQ/epicenter.git",
+      "skillPath": "skills/rust-errors/SKILL.md",
+      "skillFolderHash": "f9f78fa1675d52929eaa90d430f99485833b27b3",
+      "installedAt": "2026-01-26T12:57:02.889Z",
+      "updatedAt": "2026-01-26T12:57:02.889Z"
+    },
+    "shadcn-ui-expert": {
+      "source": "MajesteitBart/TalentMatcher",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/MajesteitBart/TalentMatcher.git",
+      "skillPath": ".claude/skills/shadcn-ui-expert/SKILL.md",
+      "skillFolderHash": "23b0611fede6044ed07470f91c4b1f8c3908e949",
+      "installedAt": "2026-01-26T13:13:34.160Z",
+      "updatedAt": "2026-01-26T13:23:09.289Z"
+    },
+    "vercel-react-best-practices": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/agent-skills.git",
+      "skillPath": "skills/react-best-practices/SKILL.md",
+      "skillFolderHash": "b86e3967846abb5beeeb874410d8f2ebf6a3f5e1",
+      "installedAt": "2026-01-26T13:21:11.179Z",
+      "updatedAt": "2026-01-26T13:21:11.179Z"
+    },
+    "web-design-guidelines": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/vercel-labs/agent-skills.git",
+      "skillPath": "skills/web-design-guidelines/SKILL.md",
+      "skillFolderHash": "3116f3e62dbd02b44a598b1aa690d2a8938e8f89",
+      "installedAt": "2026-01-26T13:22:14.077Z",
+      "updatedAt": "2026-01-26T13:22:14.077Z"
+    },
+    "frontend-design": {
+      "source": "anthropics/skills",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/anthropics/skills.git",
+      "skillPath": "skills/frontend-design/SKILL.md",
+      "skillFolderHash": "928950704df8a8b885c03de5da626331e6f29cf8",
+      "installedAt": "2026-01-26T13:22:25.785Z",
+      "updatedAt": "2026-01-26T13:22:25.785Z"
+    },
+    "tauri": {
+      "source": "martinholovsky/claude-skills-generator",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/martinholovsky/claude-skills-generator.git",
+      "skillPath": "skills/tauri/SKILL.md",
+      "skillFolderHash": "d706d90cf835b7d3832564f0c676d6a917477755",
+      "installedAt": "2026-01-26T13:22:53.037Z",
+      "updatedAt": "2026-01-26T13:22:53.037Z"
+    },
+    "tauri-v2": {
+      "source": "nodnarbnitram/claude-code-extensions",
+      "sourceType": "github",
+      "sourceUrl": "https://github.com/nodnarbnitram/claude-code-extensions.git",
+      "skillPath": ".claude/skills/tauri-v2/SKILL.md",
+      "skillFolderHash": "e18c20b2fd0fd97e0f49f019a2c2c60c84885983",
+      "installedAt": "2026-01-26T13:23:00.802Z",
+      "updatedAt": "2026-01-26T13:23:00.802Z"
+    }
+  },
+  "lastSelectedAgents": [
+    "amp",
+    "cline",
+    "codex",
+    "cursor",
+    "gemini-cli",
+    "github-copilot",
+    "kimi-cli",
+    "opencode",
+    "warp",
+    "claude-code"
+  ],
+  "dismissed": {
+    "findSkillsPrompt": true
+  }
+}

@@ -1,0 +1,61 @@
+#!/usr/bin/env bash
+
+source "$UTILSH_PATH/src/shell/git"
+
+assert::env_exist() {
+  result=$(env | awk -F '=' "/$1/ {print \$1}" | grep -c -E -i "^$1\$")
+  if [[ ! $result -eq 1 ]]; then
+    sout::error " Need to define $1 first"
+    exit 1
+  fi
+}
+
+assert::utilsh_env_exist() {
+  assert::env_exist utilsh_PATH
+}
+
+assert::total_arguments() {
+  on_error=${3:-Waiting for $2 parameters}
+  if [[ "$1" -ne "$2" ]]; then
+    sout::error "$on_error"
+    exit 1
+  fi
+}
+
+assert::arguments_more_than() {
+  if [[ $1 -gt $2 ]]; then
+    sout::error " Need at least $1 parameters"
+    exit 1
+  fi
+}
+
+assert::is_valid_json() {
+  if ! jq -e . >/dev/null 2>&1 <<<"$1"; then
+    sout::error " Invalid JSON format: $1"
+    exit 1
+  fi
+}
+
+assert::git::not::has_changes() {
+  on_error=${1:-There are uncommitted changes in the working tree}
+  if [[ $(git::has_changes) ]]; then
+    sout::error "$on_error"
+    exit 1
+  fi
+}
+
+assert::git::on_master() {
+  on_error=${1:-Not in the master branch}
+  if [[ $(git::current_branch) != "master" ]]; then
+    sout::error "$on_error"
+    exit 1
+  fi
+}
+
+assert::git::on_main() {
+  on_error=${1:-Not in the main branch}
+  if [[ $(git::current_branch) != "main" ]]; then
+    sout::error "$on_error"
+    exit 1
+  fi
+}

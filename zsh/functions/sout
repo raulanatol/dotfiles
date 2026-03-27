@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+RESET="\e[0m"
+RED="\e[31m"
+GREEN="\e[32m"
+BLUE="\e[34m"
+
+sout::error() {
+  printf "${RED}❗%s$RESET\n" "$@"
+}
+
+sout::info() {
+  printf "${BLUE}%s$RESET\n" "$@"
+}
+
+sout::success() {
+  printf "${GREEN} 🤘 %s$RESET\n" "$@"
+}
+
+sout::sure_question() {
+  read -p "$1" yn
+  case $yn in
+    [Yy]*) echo "Y" ;;
+    *) echo "N" ;;
+  esac
+}
+
+sout::set_terminal_title() {
+  echo -en "\e]2;$*\a"
+}
+
