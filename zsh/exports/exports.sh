@@ -17,17 +17,15 @@ MISC_SCRIPTS="$HOME/utils/misc"
 IDEA_SCRIPTS="$HOME/utils/idea_scripts"
 
 # Java
-export JAVA_HOME=$(/usr/libexec/java_home) # Latest
+export JAVA_HOME=$(/usr/libexec/java_home 2>/dev/null) # Latest
 export JAVA_8_HOME=/Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home
-export JAVA_11_HOME=$(/usr/libexec/java_home -v11)
-export JAVA_14_HOME=$(/usr/libexec/java_home -v14)
+export JAVA_11_HOME=$(/usr/libexec/java_home -v11 2>/dev/null)
+export JAVA_14_HOME=$(/usr/libexec/java_home -v14 2>/dev/null)
 export JAVA_17_HOME=/opt/homebrew/Cellar/openjdk/17.0.1_1
 
 export HOMEBREW_AUTO_UPDATE_SECS=86400
 export HOMEBREW_NO_ANALYTICS=true
 export HOMEBREW_BUNDLE_FILE_PATH="${DOTFILES_PATH}/brew/Brewfile"
-
-export TAURI_SIGNING_PRIVATE_KEY="$(cat $HOME/.config/tauri/tauri-updater-keys)"
 
 export EDITOR='vim'
 export WORKON_HOME="$HOME/.virtualenvs"

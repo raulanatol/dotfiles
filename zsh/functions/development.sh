@@ -9,3 +9,10 @@ wtc() {
 wtmm() {
     wt switch ^
 }
+
+load_tauri_signing_key() {
+  local key_file="$HOME/.config/tauri/tauri-updater-keys"
+  if [[ -f "$key_file" ]]; then
+    export TAURI_SIGNING_PRIVATE_KEY="$(cat "$key_file")"
+  fi
+}
