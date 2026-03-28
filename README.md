@@ -164,9 +164,6 @@ dotfiles/
 │   └── wezterm/     # WezTerm terminal configuration
 ├── brew/            # Homebrew packages and casks
 ├── git/             # Git configuration files
-├── langs/           # Language-specific configurations
-│   ├── python/      # Python environment setup
-│   └── ruby/        # Ruby configuration
 ├── mac/             # macOS-specific installation scripts
 ├── misc/            # Miscellaneous installation scripts
 ├── shell/           # Shell utilities and functions
@@ -211,4 +208,3 @@ Contributions are welcome! If you want to improve these dotfiles:
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-

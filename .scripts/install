@@ -30,7 +30,6 @@ if os::is_macos; then
   utils::install_macos
 fi
 
-source "$DOTFILES_PATH/langs/python/install.sh"
 source "$DOTFILES_PATH/misc/install.sh"
 
-sout::info " 👌 Done"
+sout::info " 👌 Done. Reboot needed!"

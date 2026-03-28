@@ -69,9 +69,6 @@ eval "$(zoxide init zsh)"
 ## Starship
 eval "$(starship init zsh)"
 
-## Init extra scripts
-source $DOTFILES_PATH/langs/python/pyenv/init.sh
-
 # Atuin
 source $DOTFILES_PATH/zsh/extra/atuin.sh
 
