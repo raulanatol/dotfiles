@@ -1,3 +1,5 @@
+.stowrc
+.stow-local-ignore
 .DS_Store
 .editorconfig
 .git
