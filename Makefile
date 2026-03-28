@@ -11,5 +11,10 @@ checkpoint:
 	@echo "Saving the dotfiles"
 	@.scripts/checkpoint
 
+brew-update:
+	@echo "Updating Brewfile with currently installed packages..."
+	@brew bundle dump --file=brew/Brewfile --force
+	@echo "Brewfile updated ✅"
+
 check:
 	@echo "✅"
