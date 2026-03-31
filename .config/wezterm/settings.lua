@@ -27,6 +27,11 @@ function module.apply_to_config(config)
             field_icon = wezterm.nerdfonts.indent_line,
         },
         modules = {
+            tabs = {
+                active_tab_fg = 1,
+                active_tab_bg = 6,
+                inactive_tab_fg = 8,
+            },
             workspace = {
                 enabled = false
             },
